@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Force hide Next.js Dev Indicators */
+[data-nextjs-toast],
+[data-nextjs-dialog-overlay],
+div[class*="nextjs-toast"],
+div[class*="nextjs-static-indicator"] {
+  display: none !important;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Original Project Variables */
+  --bg-color: #FDFBF0;
+  /* Creamy background */
+  --text-main: #1A1A1A;
+  --text-secondary: #666666;
+  --accent-green: #A8E6CF;
+  /* Soft green */
+  --accent-orange: #FFB385;
+  /* Soft orange/salmon */
+  --pill-border: #1A1A1A;
+  --card-bg: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--bg-color);
+  /* Use the creamy background by default */
+  color: var(--text-main);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+/* Header Styles from Original Project */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--text-main);
+}
+
+.nav-pill {
+  background-color: #1A1A1A;
+  border-radius: 50px;
+  padding: 8px 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  color: #888;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: var(--accent-green);
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  border: 1px solid #1A1A1A;
+  border-radius: 50px;
+  padding: 5px 5px 5px 15px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+.settings-btn {
+  background-color: var(--accent-orange);
+  border: 1px solid #1A1A1A;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
