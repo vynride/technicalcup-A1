@@ -1,6 +1,5 @@
 import React from 'react';
 import { Calendar, Clock, BookOpen, CheckCircle, MoreHorizontal, Settings, Plus, ArrowUpRight } from 'lucide-react';
-import Navbar from '@/components/Navbar';
 
 const Box = ({ children, className = "" }) => (
   <div className={`p-5 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
@@ -16,8 +15,8 @@ const Filter = ({ label, active = false }) => (
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 font-[family-name:var(--font-montserrat)] text-black">
-      <Navbar />
+    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 pt-28 font-[family-name:var(--font-montserrat)] text-black">
+
       <header className="max-w-7xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
