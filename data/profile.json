@@ -1,0 +1,132 @@
+[
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00001" },
+    "name": "Alex Thomson",
+    "quote": "Innovate. Create. Learn.",
+    "bio": "Passionate developer and lifelong learner exploring the intersection of technology and design.",
+    "achievements": [
+      "Authored 3 open-source libraries",
+      "Completed 100 Days photography",
+      "Reading sci-fi literature"
+    ],
+    "github": "https://github.com/alexthomson",
+    "linkedin": "https://linkedin.com/in/alexthomson"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00002" },
+    "name": "Priya Sharma",
+    "quote": "Build with purpose.",
+    "bio": "Full-stack engineer focused on scalable backend systems and clean UI.",
+    "achievements": [
+      "Built 5 production MERN apps",
+      "Open-source contributor",
+      "Tech blogger"
+    ],
+    "github": "https://github.com/priyasharma",
+    "linkedin": "https://linkedin.com/in/priyasharma"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00003" },
+    "name": "Rahul Mehta",
+    "quote": "Code. Optimize. Repeat.",
+    "bio": "Backend-focused developer specializing in Node.js and databases.",
+    "achievements": [
+      "Designed high-scale APIs",
+      "MongoDB performance tuning",
+      "System design enthusiast"
+    ],
+    "github": "https://github.com/rahulmehta",
+    "linkedin": "https://linkedin.com/in/rahulmehta"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00004" },
+    "name": "Sneha Kulkarni",
+    "quote": "Design meets logic.",
+    "bio": "Frontend engineer crafting accessible and beautiful web experiences.",
+    "achievements": [
+      "UI lead for 3 products",
+      "Accessibility advocate",
+      "Figma power user"
+    ],
+    "github": "https://github.com/snehakul",
+    "linkedin": "https://linkedin.com/in/snehakul"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00005" },
+    "name": "Arjun Verma",
+    "quote": "Ship fast. Ship right.",
+    "bio": "Product-driven engineer who loves shipping impactful features.",
+    "achievements": [
+      "Led 2 startup launches",
+      "Product analytics expert",
+      "Growth engineering"
+    ],
+    "github": "https://github.com/arjunverma",
+    "linkedin": "https://linkedin.com/in/arjunverma"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00006" },
+    "name": "Neha Joshi",
+    "quote": "Learning never stops.",
+    "bio": "AI-curious developer exploring LLMs and applied ML.",
+    "achievements": [
+      "Built LLM-powered chatbot",
+      "Prompt engineering",
+      "AI study groups"
+    ],
+    "github": "https://github.com/nehajoshi",
+    "linkedin": "https://linkedin.com/in/nehajoshi"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00007" },
+    "name": "Karan Malhotra",
+    "quote": "Automate everything.",
+    "bio": "DevOps-focused engineer improving reliability and CI/CD pipelines.",
+    "achievements": [
+      "Dockerized 20+ services",
+      "Kubernetes deployments",
+      "Cloud cost optimization"
+    ],
+    "github": "https://github.com/karanmal",
+    "linkedin": "https://linkedin.com/in/karanmal"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00008" },
+    "name": "Aditi Rao",
+    "quote": "Data tells stories.",
+    "bio": "Data engineer transforming raw data into insights.",
+    "achievements": [
+      "ETL pipeline design",
+      "BigQuery analytics",
+      "Data visualization"
+    ],
+    "github": "https://github.com/aditirao",
+    "linkedin": "https://linkedin.com/in/aditirao"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00009" },
+    "name": "Mohit Gupta",
+    "quote": "Solve real problems.",
+    "bio": "Software engineer focused on performance and scalability.",
+    "achievements": [
+      "Reduced API latency by 40%",
+      "Caching strategies",
+      "System profiling"
+    ],
+    "github": "https://github.com/mohitgupta",
+    "linkedin": "https://linkedin.com/in/mohitgupta"
+  },
+  {
+    "_id": { "$oid": "65a1f1c1a1b2c3d4e5f00010" },
+    "name": "Isha Kapoor",
+    "quote": "Empathy-driven design.",
+    "bio": "UX-focused frontend developer blending design and code.",
+    "achievements": [
+      "User research",
+      "Design systems",
+      "Frontend architecture"
+    ],
+    "github": "https://github.com/ishakapoor",
+    "linkedin": "https://linkedin.com/in/ishakapoor"
+  }
+]
