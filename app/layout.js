@@ -1,5 +1,4 @@
 import { Montserrat } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
 
@@ -56,8 +55,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} antialiased`}>
-        <Navbar />
+      <body className={`${montserrat.variable} antialiased`} suppressHydrationWarning>
         <SmoothScrolling />
         {children}
       </body>
