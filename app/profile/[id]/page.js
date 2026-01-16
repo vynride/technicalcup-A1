@@ -1,5 +1,5 @@
 import Profile from "@/components/Profile";
-import Navbar from "@/components/Navbar";
+
 import profiles from "@/data/profile.json";
 import { notFound } from "next/navigation";
 
@@ -15,8 +15,7 @@ export default async function Page({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#faf7f2]">
-      <Navbar />
+    <div className="min-h-screen bg-[#faf7f2] pt-28">
       <Profile profile={profile} />
     </div>
   );
