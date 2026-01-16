@@ -27,6 +27,33 @@
   },
   {
     "_id": {
+      "$oid": "a20e13ff7c6e45d3be7d3395"
+    },
+    "name": "Vivian Richard Demello",
+    "quote": "The meaning of life is to give life meaning",
+    "bio": "Hackathon Junkie 🙂‍↔️",
+    "achievements": [
+      "2xHackathon winner"
+    ],
+    "github": "https://github.com/vynride/",
+    "linkedin": "https://www.linkedin.com/in/viviandemello/"
+  },
+  {
+    "_id": {
+      "$oid": "1a7752a42f964c46b8987809"
+    },
+    "name": "Shardul Pathak",
+    "quote": "Error: Sleep.exe not found. Running on Coffee.lib and sheer willpower.",
+    "bio": "Hi there! I’m a CSE undergrad currently majoring in Context Switching. In a world where new frameworks are born faster than I can finish a cup of coffee, I spend my days (and way too many nights) juggling the entire tech ecosystem. I’m not just learning to code; I’m learning to survive the \"Modern Tech Stack.\"",
+    "achievements": [
+      "Hobbies: Sports, Music and Reading",
+      "Achievements: Top 10 at Genathon"
+    ],
+    "github": "https://github.com/Shardul-Pathak",
+    "linkedin": "https://www.linkedin.com/in/shardulpathak07"
+  },
+  {
+    "_id": {
       "$oid": "b8deaff639fd4b37a1698f76"
     },
     "name": "Meenakshi Motwani",
@@ -53,6 +80,19 @@
     ],
     "github": "https://github.com/apeksha-3",
     "linkedin": "https://www.linkedin.com/in/apeksha-sharma-880422371"
+  },
+  {
+    "_id": {
+      "$oid": "594f5cd631804b2ea1bc2536"
+    },
+    "name": "Anuj Lulu",
+    "quote": "“The future belongs to those who prepare for it today.”",
+    "bio": "Computer science student with a deep interest in technology and a strong drive to push ideas until they solve real problems. Not particularly drawn to intensive competitive programming, but I enjoy dissecting how problems are designed and exploring solutions at my own pace. I thrive in hackathons, especially under tight time constraints. The pressure and high stakes energize me. That sense of challenge and intensity is what I actually seek, both in tech and beyond.",
+    "achievements": [
+      "Playing games, watching movies and series, exploring technologies, eating good food."
+    ],
+    "github": "https://github.com/ANUJ760",
+    "linkedin": "https://www.linkedin.com/in/anuj-lulu-026554324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     "_id": {
@@ -326,33 +366,6 @@
   },
   {
     "_id": {
-      "$oid": "a20e13ff7c6e45d3be7d3395"
-    },
-    "name": "Vivian Richard Demello",
-    "quote": "The meaning of life is to give life meaning",
-    "bio": "Hackathon Junkie 🙂‍↔️",
-    "achievements": [
-      "2xHackathon winner"
-    ],
-    "github": "https://github.com/vynride/",
-    "linkedin": "https://www.linkedin.com/in/viviandemello/"
-  },
-  {
-    "_id": {
-      "$oid": "1a7752a42f964c46b8987809"
-    },
-    "name": "Shardul Pathak",
-    "quote": "Error: Sleep.exe not found. Running on Coffee.lib and sheer willpower.",
-    "bio": "Hi there! I’m a CSE undergrad currently majoring in Context Switching. In a world where new frameworks are born faster than I can finish a cup of coffee, I spend my days (and way too many nights) juggling the entire tech ecosystem. I’m not just learning to code; I’m learning to survive the \"Modern Tech Stack.\"",
-    "achievements": [
-      "Hobbies: Sports, Music and Reading",
-      "Achievements: Top 10 at Genathon"
-    ],
-    "github": "https://github.com/Shardul-Pathak",
-    "linkedin": "https://www.linkedin.com/in/shardulpathak07"
-  },
-  {
-    "_id": {
       "$oid": "7e8dfde506d44212bd610751"
     },
     "name": "Vaishnavi Singh",
@@ -361,18 +374,5 @@
     "achievements": [],
     "github": "https://github.com/Vaishnavi-7107",
     "linkedin": "https://www.linkedin.com/in/vaishnavi-singh-83b7a4368/"
-  },
-  {
-    "_id": {
-      "$oid": "594f5cd631804b2ea1bc2536"
-    },
-    "name": "Anuj Lulu",
-    "quote": "“The future belongs to those who prepare for it today.”",
-    "bio": "Computer science student with a deep interest in technology and a strong drive to push ideas until they solve real problems. Not particularly drawn to intensive competitive programming, but I enjoy dissecting how problems are designed and exploring solutions at my own pace. I thrive in hackathons, especially under tight time constraints. The pressure and high stakes energize me. That sense of challenge and intensity is what I actually seek, both in tech and beyond.",
-    "achievements": [
-      "Playing games, watching movies and series, exploring technologies, eating good food."
-    ],
-    "github": "https://github.com/ANUJ760",
-    "linkedin": "https://www.linkedin.com/in/anuj-lulu-026554324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   }
 ]

@@ -1,8 +1,15 @@
+"use client";
+
+import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
+import ImageCard from "@/components/ui/image-card";
+import profileData from "@/data/profile.json";
 
 export default function Home() {
+  const carouselRef = useRef(null);
+
   return (
     <main className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
       <Navbar />
@@ -48,6 +55,34 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Separator */}
+        <div className="w-full h-4 bg-black"></div>
+
+        {/* The People Section */}
+        <section className="mx-auto w-full py-20 lg:py-32 overflow-hidden">
+          <div className="px-6 lg:px-8 mb-12 text-center">
+             <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl drop-shadow-[2px_2px_0px_rgba(0,0,0,0.1)]">
+                The <span className="text-teal-600">People</span>
+             </h2>
+          </div>
+          
+           {/* Carousel */}
+          <div 
+            ref={carouselRef}
+            className="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 lg:px-20 pt-10 pb-12 scrollbar-hide"
+          >
+            {profileData.map((person) => (
+              <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="snap-center shrink-0">
+                  <ImageCard
+                    imageUrl="/mascot-coding.jpeg"
+                    caption={person.name}
+                    className="hover:-translate-y-2 transition-transform duration-200"
+                  />
+              </Link>
+            ))}
           </div>
         </section>
       </div>
