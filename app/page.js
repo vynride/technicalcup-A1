@@ -1,12 +1,10 @@
-import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black">
-      <div className="relative isolate min-h-screen flex flex-col">
-        <div className="px-6 lg:px-8 pt-6 z-10">
-          <Navbar />
+    <div className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
+      <div className="relative isolate flex flex-col">
+        <div className="px-6 lg:px-8 z-10">
         </div>
 
         <div className="mx-auto max-w-7xl px-6 py-32 sm:py-48 lg:px-8 lg:py-56 z-10">
