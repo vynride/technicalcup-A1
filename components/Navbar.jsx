@@ -15,20 +15,18 @@ const Navbar = () => {
     ];
 
     return (
-        <header className="flex justify-between items-center py-5 mb-15 w-full">
-            <div className="font-bold text-2xl text-[#1A1A1A]">Logo</div>
-
-            <nav className="bg-[#1A1A1A] rounded-full px-2.5 py-2 flex gap-2.5">
+        <header className="flex justify-center items-center py-6 w-full z-20 relative">
+            <nav className="bg-[#1A1A1A] rounded-full px-2 py-2 flex gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)]">
                 {navItems.map((item) => {
                     const isActive = pathname === item.path;
                     return (
                         <Link 
                             key={item.name} 
                             href={item.path} 
-                            className={`px-5 py-2.5 rounded-full text-sm transition-all duration-300 ${
+                            className={` px-6 py-2.5 rounded-full text-base font-medium tracking-tight transition-all duration-200 ${
                                 isActive 
-                                    ? 'bg-[#A8E6CF] text-[#1A1A1A] font-medium' 
-                                    : 'text-[#888] hover:bg-[#A8E6CF] hover:text-[#1A1A1A] hover:font-medium'
+                                    ? 'bg-[#A8E6CF] text-[#1A1A1A]' 
+                                    : 'text-[#888] hover:text-white hover:bg-white/10'
                             }`}
                         >
                             {item.name}
@@ -36,8 +34,6 @@ const Navbar = () => {
                     );
                 })}
             </nav>
-            
-            <div></div> 
         </header>
     );
 };
