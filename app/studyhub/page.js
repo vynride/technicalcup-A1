@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, Clock, BookOpen, CheckCircle, MoreHorizontal, Settings, Plus, ArrowUpRight } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
 export const metadata = {
   title: 'Study Hub',
@@ -20,7 +21,16 @@ const Filter = ({ label, active = false }) => (
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-4 pt-36 md:p-8 md:pt-48 font-[family-name:var(--font-montserrat)] text-black">
+    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 font-[family-name:var(--font-montserrat)] text-black">
+      <Navbar />
+      <header className="max-w-7xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
+          <div><h1 className="text-2xl font-black uppercase">Welcome back!</h1></div>
+        </div>
+        <button className="w-full sm:w-auto bg-black text-white px-8 py-3 rounded-full font-bold border-2 border-black hover:bg-white hover:text-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">Start Session</button>
+      </header>
+
       <main className="max-w-7xl mx-auto space-y-6">
         <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
           <div className="w-full overflow-hidden">

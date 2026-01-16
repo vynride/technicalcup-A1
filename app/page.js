@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import ImageCard from "@/components/ui/image-card";
@@ -11,6 +12,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
+      <Navbar />
       <div className="relative isolate flex flex-col">
         <div className="px-6 lg:px-8 z-10">
         </div>
