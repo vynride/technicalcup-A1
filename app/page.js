@@ -11,7 +11,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-20 lg:py-32 z-10">
            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Text Content */}
-            <div className="text-center lg:text-left max-w-2xl flex-1">
+            <div className="text-center lg:text-left max-w-3xl flex-1">
               <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl drop-shadow-[2px_2px_0px_rgba(0,0,0,0.1)]">
                 Welcome to <span className="text-teal-600"> Section A1</span>
               </h1>
