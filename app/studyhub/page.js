@@ -18,13 +18,13 @@ import Navbar from '@/components/Navbar';
 import timetableData from '@/app/studyhub/Timetable.json';
 
 const Box = ({ children, className = "" }) => (
-  <div className={`p-5 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
+  <div className={`p-6 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
     {children}
   </div>
 );
 
 const Filter = ({ label, active = false }) => (
-  <button className={`whitespace-nowrap px-6 py-2 rounded-full border-2 border-black text-sm font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
+  <button className={`whitespace-nowrap px-6 py-3 rounded-full border-2 border-black text-base font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
     {label}
   </button>
 );
@@ -131,62 +131,61 @@ export default function Dashboard() {
   const selectedDay = selectedDate.toLocaleDateString('default', { weekday: 'long', month: 'short', day: 'numeric' });
 
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 font-[family-name:var(--font-montserrat)] text-black">
+    <div className="min-h-screen bg-[#FFFDF8] p-2 md:p-4 font-[family-name:var(--font-montserrat)] text-black">
       <Navbar />
-      <header className="max-w-7xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
-          <div><h1 className="text-2xl font-black uppercase">Welcome back!</h1></div>
+      <header className="mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 px-2 md:px-4">
+        <div className="flex items-center gap-6">
+          <div className="w-14 h-14 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-xl shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
+          <div><h1 className="text-3xl font-black uppercase">Welcome back!</h1></div>
         </div>
-        <button className="w-full sm:w-auto bg-black text-white px-8 py-3 rounded-full font-bold border-2 border-black hover:bg-white hover:text-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">Start Session</button>
       </header>
 
-      <main className="max-w-7xl mx-auto space-y-6">
+      <main className="mx-auto space-y-6 px-2 md:px-4">
         <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
           <div className="w-full overflow-hidden">
-            <h2 className="text-4xl font-extrabold tracking-tight">Weekly Schedule</h2>
-            <div className="flex items-center gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">
+            <h2 className="text-5xl font-extrabold tracking-tight">Weekly Schedule</h2>
+            <div className="flex items-center gap-4 mt-6 overflow-x-auto pb-3 scrollbar-hide">
               {['All', 'Compiler Design', 'AI', 'DBMS'].map((l, i) => <Filter key={l} label={l} active={i === 2} />)}
-              <button className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] border-2 border-black text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={20} /></button>
+              <button className="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] border-2 border-black text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={24} /></button>
             </div>
           </div>
-          <div className="flex gap-12 bg-white/50 p-4 rounded-2xl lg:bg-transparent lg:p-0">
-            <div><p className="text-gray-500 text-sm font-bold">Hours</p><p className="text-3xl font-bold">{calculateTotalHours()}</p></div>
-            <div><p className="text-gray-500 text-sm font-bold">Tasks</p><p className="text-3xl font-bold">3/5</p></div>
+          <div className="flex gap-12 bg-white/50 p-8 rounded-2xl lg:bg-transparent lg:p-0">
+            <div><p className="text-gray-500 text-base font-bold">Hours</p><p className="text-4xl font-bold">{calculateTotalHours()}</p></div>
+            <div><p className="text-gray-500 text-base font-bold">Tasks</p><p className="text-4xl font-bold">3/5</p></div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          <Box className="lg:col-span-8 bg-[#D0BCFF] flex flex-col relative min-h-[520px]">
+        <div className="grid grid-cols-1 lg:grid-cols-9 gap-6">
+          <Box className="lg:col-span-6 bg-[#D0BCFF] flex flex-col relative min-h-[520px]">
             <div className="flex flex-col gap-4 z-10">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1">
                   <div className="flex justify-between mb-4">
-                    <span className="text-gray-400 text-sm">{monthName}</span>
-                    <div className="flex gap-1">
+                    <span className="text-gray-400 text-base">{monthName}</span>
+                    <div className="flex gap-2">
                       <button
                         onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1))}
-                        className="px-2 py-0.5 text-xs hover:bg-gray-800 rounded"
+                        className="px-3 py-1 text-sm hover:bg-gray-800 rounded"
                       >
                         ←
                       </button>
                       <button
                         onClick={() => setCurrentMonth(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1))}
-                        className="px-2 py-0.5 text-xs hover:bg-gray-800 rounded"
+                        className="px-3 py-1 text-sm hover:bg-gray-800 rounded"
                       >
                         →
                       </button>
                     </div>
                   </div>
-                  <div className="grid grid-cols-7 gap-1 text-center text-xs text-gray-500 mb-1">
+                  <div className="grid grid-cols-7 gap-2 text-center text-sm text-gray-500 mb-2">
                     {['S','M','T','W','T','F','S'].map((d, i) => (
-                      <div key={i} className="py-1 font-semibold text-gray-400">{d}</div>
+                      <div key={i} className="py-2 font-semibold text-gray-400 text-base">{d}</div>
                     ))}
                     {generateCalendarDays().map((day, idx) => (
                       <button
                         key={idx}
                         onClick={() => day && handleDateClick(day)}
-                        className={`aspect-square flex items-center justify-center rounded-full text-white cursor-pointer transition-colors ${
+                        className={`aspect-square flex items-center justify-center rounded-full text-white cursor-pointer transition-colors text-base ${
                           day === null
                             ? 'opacity-0'
                             : selectedDate.getDate() === day && selectedDate.getMonth() === currentMonth.getMonth() && selectedDate.getFullYear() === currentMonth.getFullYear()
@@ -201,23 +200,23 @@ export default function Dashboard() {
                   </div>
                 </div>
 
-                <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1 flex flex-col gap-3">
+                <div className="bg-[#1A1A1A] text-white p-6 rounded-[1.5rem] border-2 border-black flex-1 flex flex-col gap-4">
                   <div>
-                    <h3 className="text-gray-400 text-sm mb-3">Plan</h3>
-                    <div className="flex gap-2">
-                      <button className="px-4 py-2 text-white rounded-full text-xs">Lecture</button>
+                    <h3 className="text-gray-400 text-base mb-4">Plan</h3>
+                    <div className="flex gap-3">
+                      <button className="px-5 py-2 text-white rounded-full text-sm">Lecture</button>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-3">
                     {planItems.map((item) => (
-                      <div key={item.id} className={`${item.accent} text-black p-4 rounded-2xl border border-black/20`}>
+                      <div key={item.id} className={`${item.accent} text-black p-5 rounded-2xl border border-black/20`}>
                         <div className="flex justify-between items-start">
                           <div>
-                            <p className="text-xl font-bold text-black">{item.title}</p>
-                            <p className="text-[10px] font-bold mt-1 uppercase text-gray-700">Deadline</p>
-                            <p className="text-xs text-gray-700">{item.detail}</p>
+                            <p className="text-2xl font-bold text-black">{item.title}</p>
+                            <p className="text-xs font-bold mt-1 uppercase text-gray-700">Deadline</p>
+                            <p className="text-sm text-gray-700">{item.detail}</p>
                           </div>
-                          <ArrowUpRight size={16} className="text-black" />
+                          <ArrowUpRight size={20} className="text-black" />
                         </div>
                       </div>
                     ))}
@@ -225,19 +224,19 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-[1.25rem] border-2 border-black p-4 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                <div className="flex items-center justify-between mb-3">
+              <div className="bg-white rounded-[1.25rem] border-2 border-black p-5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                <div className="flex items-center justify-between mb-4">
                   <div>
-                    <p className="text-xs font-bold uppercase text-gray-500">Class Schedule</p>
-                    <p className="text-sm font-semibold text-gray-700">{selectedDay}</p>
+                    <p className="text-sm font-bold uppercase text-gray-500">Class Schedule</p>
+                    <p className="text-base font-semibold text-gray-700">{selectedDay}</p>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-gray-600">
-                    <Clock size={14} />
+                  <div className="flex items-center gap-3 text-sm text-gray-600">
+                    <Clock size={16} />
                     <span className="font-semibold">{calculateTotalHours()}</span>
                   </div>
                 </div>
                 <div
-                  className="space-y-3 max-h-72 overflow-y-auto pr-2 -mr-2 scrollbar-thin"
+                  className="space-y-4 max-h-80 overflow-y-auto pr-2 -mr-2 scrollbar-thin"
                   style={{ overscrollBehavior: 'contain' }}
                   onWheelCapture={handleScheduleWheel}
                 >
@@ -245,24 +244,24 @@ export default function Dashboard() {
                     timetableClasses.map((classItem, idx) => (
                       <div
                         key={idx}
-                        className={`p-3 rounded-xl border-l-4 ${classItem.type === 'Break' ? 'bg-yellow-100 border-yellow-400' : 'bg-purple-100 border-purple-500'}`}
+                        className={`p-4 rounded-xl border-l-4 ${classItem.type === 'Break' ? 'bg-yellow-100 border-yellow-400' : 'bg-purple-100 border-purple-500'}`}
                       >
-                        <div className="flex justify-between items-start mb-2">
+                        <div className="flex justify-between items-start mb-3">
                           <div className="flex-1 min-w-0 pr-2">
-                            <div className="flex items-center gap-2 mb-1 text-xs text-gray-600">
-                              <Clock size={12} />
+                            <div className="flex items-center gap-3 mb-2 text-sm text-gray-600">
+                              <Clock size={14} />
                               <span className="font-semibold text-gray-800">{classItem.time}</span>
                             </div>
-                            <p className="text-sm font-bold text-gray-900 break-words">{classItem.className}</p>
+                            <p className="text-base font-bold text-gray-900 break-words">{classItem.className}</p>
                           </div>
-                          <span className={`px-2 py-1 rounded-full text-[11px] font-semibold flex-shrink-0 ${classItem.type === 'Break' ? 'bg-yellow-300 text-yellow-900' : 'bg-purple-200 text-purple-800'}`}>
+                          <span className={`px-3 py-1 rounded-full text-xs font-semibold flex-shrink-0 ${classItem.type === 'Break' ? 'bg-yellow-300 text-yellow-900' : 'bg-purple-200 text-purple-800'}`}>
                             {classItem.type}
                           </span>
                         </div>
                         {classItem.type !== 'Break' && (
-                          <div className="flex flex-wrap gap-3 text-[11px] text-gray-700 ml-5">
-                            <span className="flex items-center gap-1"><User size={11} />{classItem.teacher}</span>
-                            <span className="flex items-center gap-1"><MapPin size={11} />{classItem.room}</span>
+                          <div className="flex flex-wrap gap-3 text-xs text-gray-700 ml-6">
+                            <span className="flex items-center gap-1"><User size={13} />{classItem.teacher}</span>
+                            <span className="flex items-center gap-1"><MapPin size={13} />{classItem.room}</span>
                           </div>
                         )}
                       </div>
@@ -277,48 +276,48 @@ export default function Dashboard() {
             </div>
           </Box>
 
-          <div className="lg:col-span-4 flex flex-col gap-6">
-            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-3">
+          <div className="lg:col-span-3 flex flex-col gap-6">
+            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-4">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <CheckCircle size={20} className="text-purple-700" />
-                  <h3 className="text-lg font-bold text-purple-900">Task List</h3>
+                <div className="flex items-center gap-3">
+                  <CheckCircle size={24} className="text-purple-700" />
+                  <h3 className="text-xl font-bold text-purple-900">Task List</h3>
                 </div>
-                <MoreHorizontal size={20} className="opacity-50" />
+                <MoreHorizontal size={24} className="opacity-50" />
               </div>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {tasks.map((task) => (
-                  <div key={task.id} className="bg-white border-2 border-black rounded-xl p-3 flex flex-col shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <span className="text-sm font-semibold text-gray-900">{task.name}</span>
-                    <span className="text-xs text-gray-600">Deadline: {task.deadline}</span>
+                  <div key={task.id} className="bg-white border-2 border-black rounded-xl p-4 flex flex-col shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                    <span className="text-base font-semibold text-gray-900">{task.name}</span>
+                    <span className="text-sm text-gray-600">Deadline: {task.deadline}</span>
                   </div>
                 ))}
               </div>
             </Box>
 
-            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-3">
-              <div className="flex items-center gap-2 mb-1">
-                <BookOpen size={20} className="text-purple-700" />
-                <h3 className="text-lg font-bold text-purple-900">Study Resources</h3>
+            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-4">
+              <div className="flex items-center gap-3 mb-2">
+                <BookOpen size={24} className="text-purple-700" />
+                <h3 className="text-xl font-bold text-purple-900">Study Resources</h3>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {resources.map((resource) => (
                   <button
                     key={resource.id}
                     onClick={() => handleDownload(resource)}
-                    className="w-full p-4 rounded-xl flex items-center justify-between transition-transform group border-2 border-black text-left shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
+                    className="w-full p-5 rounded-xl flex items-center justify-between transition-transform group border-2 border-black text-left shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
                     style={{ backgroundColor: '#FBE36A' }}
                   >
-                    <div className="flex items-center gap-3 flex-1 min-w-0">
-                      <div className="w-10 h-10 rounded-lg bg-white border-2 border-black flex items-center justify-center text-yellow-900 text-sm font-bold flex-shrink-0">
+                    <div className="flex items-center gap-4 flex-1 min-w-0">
+                      <div className="w-12 h-12 rounded-lg bg-white border-2 border-black flex items-center justify-center text-yellow-900 text-base font-bold flex-shrink-0">
                         {resource.type.substring(0, 1)}
                       </div>
                       <div className="min-w-0 flex-1 text-black">
-                        <p className="text-sm font-semibold truncate">{resource.name}</p>
-                        <p className="text-xs text-black/80">{resource.size}</p>
+                        <p className="text-base font-semibold truncate">{resource.name}</p>
+                        <p className="text-sm text-black/80">{resource.size}</p>
                       </div>
                     </div>
-                    <Download size={16} className="text-black flex-shrink-0 ml-2 group-hover:scale-110 transition-transform" />
+                    <Download size={20} className="text-black flex-shrink-0 ml-3 group-hover:scale-110 transition-transform" />
                   </button>
                 ))}
               </div>
