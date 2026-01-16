@@ -1,38 +1,38 @@
 import React from 'react';
 import { Calendar, Clock, BookOpen, CheckCircle, MoreHorizontal, Settings, Plus, ArrowUpRight } from 'lucide-react';
+import Navbar from '@/components/Navbar';
 
-const Box = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
-  <div className={`p-5 rounded-[2rem] hover:scale-[1.01] duration-300 ${className}`}>
+const Box = ({ children, className = "" }) => (
+  <div className={`p-5 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
     {children}
   </div>
 );
 
-const Filter = ({ label, active = false }: { label: string; active?: boolean }) => (
-  <button className={`whitespace-nowrap px-6 py-2 rounded-full border text-sm font-medium transition-colors ${active ? 'bg-green-100 border-green-200 text-green-800' : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50'}`}>
+const Filter = ({ label, active = false }) => (
+  <button className={`whitespace-nowrap px-6 py-2 rounded-full border-2 border-black text-sm font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
     {label}
   </button>
 );
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 font-sans text-gray-800">
-      {/* Navbar */}
+    <div className="min-h-screen bg-[#FFFDF8] p-4 md:p-8 font-[family-name:var(--font-montserrat)] text-black">
+      <Navbar />
       <header className="max-w-7xl mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full bg-gray-900 flex items-center justify-center text-white font-bold">PG</div>
-          <div><h1 className="text-xl font-bold">Welcome back!</h1></div>
+          <div className="w-12 h-12 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
+          <div><h1 className="text-2xl font-black uppercase">Welcome back!</h1></div>
         </div>
-        <button className="w-full sm:w-auto bg-gray-900 text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800">Start Session</button>
+        <button className="w-full sm:w-auto bg-black text-white px-8 py-3 rounded-full font-bold border-2 border-black hover:bg-white hover:text-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">Start Session</button>
       </header>
 
       <main className="max-w-7xl mx-auto space-y-6">
-        {/* Statistics & Filters */}
         <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
           <div className="w-full overflow-hidden">
             <h2 className="text-4xl font-extrabold tracking-tight">Weekly Schedule</h2>
             <div className="flex items-center gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">
               {['All', 'Discrete Math', 'Algorithms', 'Networks'].map((l, i) => <Filter key={l} label={l} active={i === 2} />)}
-              <button className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] text-white"><Plus size={20} /></button>
+              <button className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] border-2 border-black text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={20} /></button>
             </div>
           </div>
           <div className="flex gap-12 bg-white/50 p-4 rounded-2xl lg:bg-transparent lg:p-0">
@@ -41,9 +41,7 @@ export default function Dashboard() {
           </div>
         </div>
 
-        {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          {/* Large Focus Area */}
           <Box className="lg:col-span-8 bg-[#D0BCFF] flex flex-col relative min-h-[480px]">
             <div className="flex justify-between items-start mb-6 z-10">
               <div className="flex items-center gap-3 bg-white/30 backdrop-blur-sm p-2 pr-4 rounded-full">
@@ -54,22 +52,22 @@ export default function Dashboard() {
             </div>
 
             <div className="flex flex-col md:flex-row gap-4 z-10">
-              <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] flex-1">
+              <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1">
                  <div className="flex justify-between mb-4"><span className="text-gray-400 text-sm">October</span><Calendar size={16} className="text-gray-500"/></div>
                  <div className="grid grid-cols-7 gap-1 text-center text-xs text-gray-500">
-                    {['M','T','W','T','F','S','S'].map(d => <div key={d} className="py-1">{d}</div>)}
+                    {['M','T','W','T','F','S','S'].map((d, i) => <div key={i} className="py-1">{d}</div>)}
                     {Array.from({length: 28}).map((_, i) => (
-                        <div key={i} className={`aspect-square flex items-center justify-center rounded-full text-white cursor-pointer ${i===16?'bg-[#A3E635] text-black font-bold':'hover:bg-white/10'}`}>{i+1}</div>
+                        <div key={i} className={`aspect-square flex items-center justify-center rounded-full text-white cursor-pointer ${i===16?'bg-[#A8E6CF] text-black font-bold':'hover:bg-white/10'}`}>{i+1}</div>
                     ))}
                  </div>
               </div>
 
-              <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] flex-1 flex flex-col justify-between">
+              <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1 flex flex-col justify-between">
                 <div>
                     <h3 className="text-gray-400 text-sm mb-3">Plan</h3>
-                    <div className="flex gap-2"><button className="px-4 py-2 bg-[#2D2D2D] rounded-full text-xs">Lecture</button><button className="px-4 py-2 bg-[#A3E635] text-black font-bold rounded-full text-xs">Practice</button></div>
+                    <div className="flex gap-2"><button className="px-4 py-2 bg-[#2D2D2D] rounded-full text-xs">Lecture</button><button className="px-4 py-2 bg-[#A8E6CF] text-black font-bold rounded-full text-xs">Practice</button></div>
                 </div>
-                <div className="bg-[#A3E635] text-black p-4 rounded-2xl">
+                <div className="bg-[#A8E6CF] text-black p-4 rounded-2xl">
                     <div className="flex justify-between"><p className="text-[10px] font-bold uppercase">Deadline</p><ArrowUpRight size={16}/></div>
                     <p className="text-xl font-bold mt-1">Graph Theory</p>
                     <p className="text-xs opacity-80">Fri, 11:59 PM</p>
@@ -77,16 +75,8 @@ export default function Dashboard() {
               </div>
             </div>
 
-            <div className="lg:absolute bottom-6 right-6 w-auto lg:w-64 bg-[#EAD996] p-4 rounded-[1.5rem] mt-4 lg:mt-0 lg:rotate-[-2deg] hover:rotate-0 transition-transform">
-                <p className="text-xs font-bold text-yellow-900 mb-2">QUICK LINKS</p>
-                <div className="flex gap-2 h-10">
-                    <div className="flex-1 bg-yellow-900/10 rounded-xl flex items-center justify-center text-xs font-bold text-yellow-900/50">Drive</div>
-                    <div className="flex-1 bg-yellow-900/80 rounded-xl flex items-center justify-center text-xs font-bold text-white">Classroom</div>
-                </div>
-            </div>
           </Box>
 
-          {/* Right Column */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <Box className="bg-[#D0BCFF] flex-1 flex flex-col justify-between">
                 <div className="flex justify-between"><div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center"><CheckCircle size={20} /></div><MoreHorizontal size={20} className="opacity-50"/></div>
