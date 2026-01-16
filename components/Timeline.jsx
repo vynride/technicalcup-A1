@@ -2,36 +2,39 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function Timeline({ events }) {
+    if (!events || events.length === 0) return null;
+
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="relative wrap overflow-hidden p-10 h-full">
+            <div className="relative wrap overflow-hidden p-4 md:p-10 h-full">
                 {/* Vertical Line */}
-                <div className="border-2 absolute border-opacity-20 border-gray-700 h-full border text-center" style={{ left: '50%' }}></div>
+                <div className="absolute border-opacity-20 border-zinc-400 dark:border-zinc-700 h-full border-r-[2px] left-1/2 -ml-[1px]"></div>
 
                 {events.map((event, index) => {
                     const isRight = index % 2 !== 0;
                     return (
                         <div key={event.id} className={`mb-8 flex justify-between items-center w-full ${isRight ? 'flex-row-reverse' : ''}`}>
-                            <div className="order-1 w-5/12"></div>
+                            <div className="order-1 w-5/12 hidden md:block"></div>
 
                             {/* Dot on the line */}
-                            <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full border-4 border-white">
-                                <div className="mx-auto font-semibold text-lg text-white"></div>
+                            <div className="z-20 flex items-center justify-center order-1 w-8 h-8 rounded-full border-2 border-black bg-[#A8E6CF] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                             </div>
 
                             {/* Card */}
-                            <Link href={`/events/${event.id}`} className="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-105 transition-transform cursor-pointer block text-gray-800">
+                            <Link href={`/events/${event.id}`} className="order-1 bg-white rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black w-full md:w-5/12 px-6 py-6 hover:translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 cursor-pointer block group">
                                 <div className="flex justify-between items-center mb-3">
-                                    <span className="font-light text-gray-500 text-sm">{event.date}</span>
-                                    <span className={`px-2 py-1 rounded text-xs font-bold ${event.categoryColor || 'bg-gray-200'}`}>
+                                    <span className="font-bold text-black text-sm tracking-wide">{event.date}</span>
+                                    <span className={`px-3 py-1 rounded-md text-xs font-black uppercase tracking-wider border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${event.categoryColor ? event.categoryColor : 'bg-gray-100 text-black'}`}>
                                         {event.category}
                                     </span>
                                 </div>
-                                <h3 className="font-bold text-lg mb-2">{event.summary}</h3>
-                                <p className="text-gray-600 text-sm">
+                                <h3 className="font-black text-xl mb-2 text-black group-hover:underline decoration-2 underline-offset-4">{event.summary}</h3>
+                                <p className="text-black text-sm leading-relaxed font-medium">
                                     {event.description}
-                                    <span className="block mt-2 font-semibold text-blue-500 text-xs text-right">Check it out ►</span>
                                 </p>
+                                <div className="flex justify-end mt-4">
+                                     <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[#A8E6CF] px-1 transition-colors">Read More -&gt;</span>
+                                </div>
                             </Link>
                         </div>
                     );
