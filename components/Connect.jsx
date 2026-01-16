@@ -3,7 +3,7 @@ import { Github, Linkedin } from "lucide-react";
 export default function Connect({ github, linkedin }) {
   return (
     <div
-      className="bg-[#E9D5FF] border-2 border-black rounded-2xl p-6
+      className="bg-[#fcd34d] border-2 border-black rounded-2xl p-6
       shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
     >
       <h3 className="font-bold text-lg text-black mb-4">
