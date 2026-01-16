@@ -19,8 +19,9 @@ const Navbar = () => {
         <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 pb-2 pointer-events-none">
             <nav className="bg-[#1A1A1A] rounded-full px-2 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] pointer-events-auto transition-transform duration-300 hover:scale-[1.02]">
                 <div className="pl-2 pr-1">
-                 <Image src="/mascot-green.jpg" alt="Logo" width={40} height={40} className="w-10 h-10 rounded-full object-cover" />
+                 <Image src="/mascot-with-books.png" alt="Logo" width={40} height={40} className="w-10 h-10 rounded-full object-cover" />
                 </div>
+                <div className="w-0.5 h-6 bg-[#A8E6CF] mx-1 rounded-full opacity-40"></div>
                 {navItems.map((item) => {
                     const isActive = pathname === item.path;
                     return (
