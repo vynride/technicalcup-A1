@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
+    <main className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
       <div className="relative isolate flex flex-col">
         <div className="px-6 lg:px-8 z-10">
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:py-32 z-10">
+        <section className="mx-auto max-w-7xl px-6 py-20 lg:py-32 z-10">
            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Text Content */}
             <div className="text-center lg:text-left max-w-3xl flex-1">
@@ -47,8 +47,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }
