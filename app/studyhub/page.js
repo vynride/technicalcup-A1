@@ -1,6 +1,11 @@
 import React from 'react';
 import { Calendar, Clock, BookOpen, CheckCircle, MoreHorizontal, Settings, Plus, ArrowUpRight } from 'lucide-react';
 
+export const metadata = {
+  title: 'Study Hub',
+  description: 'Access study resources, schedules, and task tracking for Section A1.',
+};
+
 const Box = ({ children, className = "" }) => (
   <div className={`p-5 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
     {children}
