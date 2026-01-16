@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import GalleryCard from '@/components/GalleryCard';
 import StatCard from '@/components/StatCard';
 import CategoryButton from '@/components/CategoryButton';
-import content from '@/data/gallerycontent.json';
+import content from '@/public/gallerycontent.json';
 // footer
 
 export default function Home() {
