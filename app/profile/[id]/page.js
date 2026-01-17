@@ -16,7 +16,7 @@ export default async function Page({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#faf7f2]">
+    <div className="min-h-screen bg-[var(--color-neo-bg)]">
       <Navbar />
       <Profile profile={profile} />
     </div>
