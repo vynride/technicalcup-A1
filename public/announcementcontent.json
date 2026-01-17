@@ -1,0 +1,52 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "date": "January 18",
+      "title": "SectionCup-\"Photography Cup\" registration deadline!",
+      "description": "The registration deadline for SectionCup-\"Photography Cup\" is January 18th. Make sure to sign up before then!"
+    },
+    {
+      "id": 2,
+      "date": "January 16",
+      "title": "Inaugural Ceremony of RBU Literature Festival 2026",
+      "description": " A spectacular celebration of literature, ideas, and creative expression, organized in association with the Vidarbha Literature Foundation (VLF) on 16th January 2026, at 10:30 AM, Main Auditorium."
+    },
+    {
+      "id": 3,
+      "date": "January 13",
+      "title": "Nazariya x Sony",
+      "description": "We’re excited to announce an exclusive Photography Workshop in collaboration with Sony, if storytelling through visuals excites you, this is something you don’t want to miss."
+    },
+    {
+      "id": 4,
+      "date": "April 12",
+      "title": "NATIONAL YOUTH DAY",
+      "description": "Student Representative Council (SRC) , is organizing a special programme under the National Initiative – Viksit Bharat Young Leaders Dialogue (VBYLD) 2026."
+    }
+  ],
+  "events": [
+    
+    {
+      "id": 1,
+      "month": "JAN",
+      "day": "19",
+      "title": "MineQuest",
+      "time": "11:00 AM - 6:00 PM"
+    },
+    {
+      "id": 2,
+      "month": "JAN",
+      "day": "19",
+      "title": "TechnoFrenzy 3.0",
+      "time": ""
+    },
+    {
+      "id": 3,
+      "month": "JAN",
+      "day": "19",
+      "title": "Hawkins Heist",
+      "time": "12:00 PM - 6:00 PM"
+    }
+  ]
+}

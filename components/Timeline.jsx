@@ -18,25 +18,25 @@ export default function Timeline({ events }) {
                             <div className="order-1 w-5/12 hidden md:block"></div>
 
                             {/* Dot on the line */}
-                            <div className="z-20 flex items-center justify-center order-1 w-8 h-8 rounded-full border-2 border-black bg-[#A8E6CF] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                            <div className="z-20 flex items-center justify-center order-1 w-8 h-8 rounded-full border-2 border-black bg-[var(--color-neo-mint)] neo-shadow-sm">
                             </div>
 
                             {/* Card */}
-                            <Link href={`/events/${event.id}`} className="order-1 bg-white rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] border-2 border-black w-full md:w-5/12 px-6 py-6 hover:translate-x-1 hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 cursor-pointer block group">
+                            <Link href={`/events/${event.id}`} className="order-1 bg-white rounded-xl neo-shadow border-2 border-black w-full md:w-5/12 px-6 py-6 hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm transition-all duration-200 cursor-pointer block group">
                                 <div className="flex justify-between items-center mb-3">
                                     <span className="font-bold text-black text-sm tracking-wide">{event.date}</span>
-                                    <span className={`px-3 py-1 rounded-md text-xs font-black uppercase tracking-wider border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${event.categoryColor ? event.categoryColor : 'bg-gray-100 text-black'}`}>
+                                    <span className={`px-3 py-1 rounded-md text-xs font-black uppercase tracking-wider border-2 border-black neo-shadow-sm ${event.categoryColor ? event.categoryColor : 'bg-gray-100 text-black'}`}>
                                         {event.category}
                                     </span>
                                 </div>
                                 <h3 className="font-black text-xl mb-2 text-black group-hover:underline decoration-2 underline-offset-4">{event.summary}</h3>
-                                <ScrollArea className="max-h-[200px] w-full rounded-md border-2 border-black bg-white p-4 text-base shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                                <ScrollArea className="max-h-[200px] w-full rounded-md border-2 border-black bg-white p-4 text-base neo-shadow-sm">
                                     <p className="text-black text-base leading-relaxed font-medium">
                                         {event.description}
                                     </p>
                                 </ScrollArea>
                                 <div className="flex justify-end mt-4">
-                                     <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[#A8E6CF] px-1 transition-colors">Read More -&gt;</span>
+                                     <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[var(--color-neo-mint)] px-1 transition-colors">Read More -&gt;</span>
                                 </div>
                             </Link>
                         </div>

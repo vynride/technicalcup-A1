@@ -1,20 +1,28 @@
-# Section A1 - Web Wars: Section Showdown
+# 🏆 Section A1 - Web Wars: Section Showdown
 
-## Live Demo
-**[https://technicalcup-a1.vercel.app/](https://technicalcup-a1.vercel.app/)**
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployment-7928CA?style=for-the-badge&logo=vercel&logoColor=white)](https://technicalcup-a1.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Neobrutalism.dev](https://img.shields.io/badge/✨_Neobrutalism_-Components-97bfff?style=for-the-badge&logoColor=black)](https://www.neobrutalism.dev/)
 
-## Tech Stack
+<div align="center">
+  <img src="public/mascot-with-books.webp" alt="Section A1 Mascot" width="350" />
+</div>
+
+
+
+## 🛠️ Tech Stack
 
 This project is built using a modern, performance-first stack:
 
 *   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 *   **Language**: JavaScript
 *   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Components**: [Neobrutalism.dev](https://www.neobrutalism.dev/)
 *   **Icons**: [Lucide React](https://lucide.dev/)
 *   **Smooth Scrolling**: [Lenis](https://lenis.studio/)
 *   **Fonts**: Montserrat (via `next/font`)
 
-## Key Features
+## ✨ Key Features
 
 *   **Neobrutalist Design**: A bold, high-contrast aesthetic with hard shadows and vibrant colors to make a strong visual impact.
 *   **Responsive Timeline**: An interactive "Journey" timeline on the Blog page to showcase our milestones.
@@ -23,7 +31,7 @@ This project is built using a modern, performance-first stack:
 *   **Smooth Scrolling**: Integrated Lenis for a premium, buttery-smooth scrolling experience.
 *   **Mobile Responsive**: Fully optimized for all device sizes, including a custom mobile navigation menu.
 
-## Bonus Tasks & Achievements
+## 🏅 Bonus Tasks & Achievements
 
 We have successfully implemented the following bonus challenges:
 
@@ -46,7 +54,7 @@ We have integrated **Neobrutalism.dev**'s component library to enhance our desig
 *   **[Button](https://www.neobrutalism.dev/docs/button)**: Used extensively throughout the site, including the **Navbar**, **Home Page** CTAs, and the **Study Hub** dashboard controls.
 *   **[Image Card](https://www.neobrutalism.dev/docs/image-card)**: Used in the **The People** section on the Home Page to display team member profiles with a distinct hover effect.
 
-## Getting Started
+## 💻 Getting Started
 
 1.  **Clone the repository**:
     ```bash

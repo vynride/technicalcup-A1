@@ -6,10 +6,10 @@ export default function Profile({ profile }) {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
       {/* Main Profile Container */}
-      <div className="bg-[#E9D5FF] border-4 border-black rounded-3xl p-6 lg:p-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] relative">
+      <div className="bg-[var(--color-neo-purple)] border-4 border-black rounded-3xl p-6 lg:p-10 neo-shadow-lg relative">
         
         {/* Profile Badge/Heading */}
-        <div className="absolute -top-6 left-6 lg:left-10 bg-white border-2 border-black px-6 py-2 rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+        <div className="absolute -top-6 left-6 lg:left-10 bg-white border-2 border-black px-6 py-2 rounded-full neo-shadow">
             <h1 className="text-xl font-black text-black uppercase tracking-wider">Profile</h1>
         </div>
 
@@ -20,14 +20,14 @@ export default function Profile({ profile }) {
               w-full mx-auto lg:mx-0
               max-w-sm lg:max-w-full
               border-4 border-black rounded-2xl overflow-hidden
-              shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]
+              neo-shadow-lg
               aspect-[3/4] bg-white
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12"
+              src={profile.photo || "/mascot-coding.jpeg"}
               alt="Profile"
-              className="w-full h-full object-cover"
+              className="object-cover w-full h-full"
             />
           </div>
 
@@ -37,29 +37,31 @@ export default function Profile({ profile }) {
             {/* Bio Card */}
             <div
               className="bg-white border-2 border-black rounded-2xl p-6 lg:p-8
-              shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]"
+              neo-shadow"
             >
               <h2 className="text-4xl font-black text-black tracking-tight">
                 {profile.name}
               </h2>
 
-              <p className="mt-2 text-lg font-bold text-teal-600 italic">
-                "{profile.quote}"
-              </p>
+              {profile.quote && (
+                <p className="mt-2 text-lg font-bold text-teal-600 italic">
+                  "{profile.quote}"
+                </p>
+              )}
 
               <div className="w-full h-1 bg-black/10 my-4 rounded-full"></div>
 
               <ScrollArea className="max-h-[200px] w-full rounded-md border-0 p-0">
                   <p className="text-black leading-relaxed font-medium text-lg pr-4">
-                    {profile.bio}
+                    {profile.bio || "No bio available."}
                   </p>
               </ScrollArea>
             </div>
 
-            <Achievements achievements={profile.achievements} />
+            <Achievements achievements={profile.achievements_and_hobbies ? profile.achievements_and_hobbies.split('\n') : []} />
             <Connect
-              github={profile.github}
-              linkedin={profile.linkedin}
+              github={profile.github_link}
+              linkedin={profile.linkedin_link}
             />
           </div>
         </div>

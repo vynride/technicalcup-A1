@@ -18,13 +18,13 @@ import Navbar from '@/components/Navbar';
 import timetableData from '@/app/studyhub/Timetable.json';
 
 const Box = ({ children, className = "" }) => (
-  <div className={`p-6 rounded-[1.5rem] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 ${className}`}>
+  <div className={`p-6 rounded-3xl border-2 border-black neo-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm transition-all duration-200 ${className}`}>
     {children}
   </div>
 );
 
 const Filter = ({ label, active = false }) => (
-  <button className={`whitespace-nowrap px-6 py-3 rounded-full border-2 border-black text-base font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
+  <button className={`whitespace-nowrap px-6 py-3 rounded-full border-2 border-black text-base font-bold transition-all ${active ? 'bg-[var(--color-neo-mint)] text-black neo-shadow-sm' : 'bg-white text-gray-700 hover:bg-gray-50 hover:neo-shadow-sm'}`}>
     {label}
   </button>
 );
@@ -131,14 +131,9 @@ export default function Dashboard() {
   const selectedDay = selectedDate.toLocaleDateString('default', { weekday: 'long', month: 'short', day: 'numeric' });
 
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-2 md:p-4 font-[family-name:var(--font-montserrat)] text-black">
+    <div className="min-h-screen bg-[var(--color-neo-bg)] p-2 md:p-4 font-sans text-black">
       <Navbar />
-      <header className="mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 px-2 md:px-4">
-        <div className="flex items-center gap-6">
-          <div className="w-14 h-14 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-xl shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
-          <div><h1 className="text-3xl font-black uppercase">Welcome back!</h1></div>
-        </div>
-      </header>
+
 
       <main className="mx-auto space-y-6 px-2 md:px-4">
         <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
@@ -146,7 +141,7 @@ export default function Dashboard() {
             <h2 className="text-5xl font-extrabold tracking-tight">Weekly Schedule</h2>
             <div className="flex items-center gap-4 mt-6 overflow-x-auto pb-3 scrollbar-hide">
               {['All', 'Compiler Design', 'AI', 'DBMS'].map((l, i) => <Filter key={l} label={l} active={i === 2} />)}
-              <button className="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] border-2 border-black text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={24} /></button>
+              <button className="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[var(--color-neo-orange)] border-2 border-black text-white neo-shadow hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={24} /></button>
             </div>
           </div>
           <div className="flex gap-12 bg-white/50 p-8 rounded-2xl lg:bg-transparent lg:p-0">
@@ -159,7 +154,7 @@ export default function Dashboard() {
           <Box className="lg:col-span-6 bg-[#D0BCFF] flex flex-col relative min-h-[520px]">
             <div className="flex flex-col gap-4 z-10">
               <div className="flex flex-col md:flex-row gap-4">
-                <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1">
+                <div className="bg-[#1A1A1A] text-white p-5 rounded-3xl border-2 border-black flex-1">
                   <div className="flex justify-between mb-4">
                     <span className="text-gray-400 text-base">{monthName}</span>
                     <div className="flex gap-2">
@@ -189,7 +184,7 @@ export default function Dashboard() {
                           day === null
                             ? 'opacity-0'
                             : selectedDate.getDate() === day && selectedDate.getMonth() === currentMonth.getMonth() && selectedDate.getFullYear() === currentMonth.getFullYear()
-                            ? 'bg-[#A8E6CF] text-black font-bold'
+                            ? 'bg-[var(--color-neo-mint)] text-black font-bold'
                             : 'hover:bg-white/10'
                         }`}
                         disabled={day === null}
@@ -200,7 +195,7 @@ export default function Dashboard() {
                   </div>
                 </div>
 
-                <div className="bg-[#1A1A1A] text-white p-6 rounded-[1.5rem] border-2 border-black flex-1 flex flex-col gap-4">
+                <div className="bg-[#1A1A1A] text-white p-6 rounded-3xl border-2 border-black flex-1 flex flex-col gap-4">
                   <div>
                     <h3 className="text-gray-400 text-base mb-4">Plan</h3>
                     <div className="flex gap-3">
@@ -224,7 +219,7 @@ export default function Dashboard() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-[1.25rem] border-2 border-black p-5 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <div className="bg-white rounded-2xl border-2 border-black p-5 neo-shadow sm:neo-shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <p className="text-sm font-bold uppercase text-gray-500">Class Schedule</p>
@@ -277,7 +272,7 @@ export default function Dashboard() {
           </Box>
 
           <div className="lg:col-span-3 flex flex-col gap-6">
-            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-4">
+            <Box className="bg-[var(--color-neo-purple)] flex-1 flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <CheckCircle size={24} className="text-purple-700" />
@@ -287,7 +282,7 @@ export default function Dashboard() {
               </div>
               <div className="space-y-3">
                 {tasks.map((task) => (
-                  <div key={task.id} className="bg-white border-2 border-black rounded-xl p-4 flex flex-col shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  <div key={task.id} className="bg-white border-2 border-black rounded-xl p-4 flex flex-col neo-shadow">
                     <span className="text-base font-semibold text-gray-900">{task.name}</span>
                     <span className="text-sm text-gray-600">Deadline: {task.deadline}</span>
                   </div>
@@ -295,7 +290,7 @@ export default function Dashboard() {
               </div>
             </Box>
 
-            <Box className="bg-[#D0BCFF] flex-1 flex flex-col gap-4">
+            <Box className="bg-[var(--color-neo-purple)] flex-1 flex flex-col gap-4">
               <div className="flex items-center gap-3 mb-2">
                 <BookOpen size={24} className="text-purple-700" />
                 <h3 className="text-xl font-bold text-purple-900">Study Resources</h3>
@@ -305,7 +300,7 @@ export default function Dashboard() {
                   <button
                     key={resource.id}
                     onClick={() => handleDownload(resource)}
-                    className="w-full p-5 rounded-xl flex items-center justify-between transition-transform group border-2 border-black text-left shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]"
+                    className="w-full p-5 rounded-xl flex items-center justify-between transition-transform group border-2 border-black text-left neo-shadow"
                     style={{ backgroundColor: '#FBE36A' }}
                   >
                     <div className="flex items-center gap-4 flex-1 min-w-0">
