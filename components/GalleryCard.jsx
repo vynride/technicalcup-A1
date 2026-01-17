@@ -25,19 +25,6 @@ export default function GalleryCard({ item }) {
         </h3>
 
         <div className="flex items-center justify-between">
-          <div className="flex -space-x-3">
-            {item.users.slice(0, 3).map((user, index) => (
-              <UserAvatar key={index} name={user} />
-            ))}
-            {item.users.length > 3 && (
-              <div className="w-10 h-10 bg-[#F4A261] rounded-full flex items-center justify-center border-4 border-[#C8B3E6]">
-                <span className="text-xs font-bold text-white">
-                  +{item.users.length - 3}
-                </span>
-              </div>
-            )}
-          </div>
-
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <Heart className="w-5 h-5 text-[#F4A261]" />

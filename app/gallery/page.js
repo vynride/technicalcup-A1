@@ -5,10 +5,10 @@ import Navbar from '@/components/Navbar';
 import GalleryCard from '@/components/GalleryCard';
 import StatCard from '@/components/StatCard';
 import CategoryButton from '@/components/CategoryButton';
-import content from '@/public/gallerycontent.json';
+import content from '@/data/gallerycontent.json';
 // footer
 
-export default function Home() {
+export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const { categories, stats, galleryItems } = content;
