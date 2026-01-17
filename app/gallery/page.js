@@ -21,11 +21,11 @@ export default function Gallery() {
       <Navbar />
       <main className="max-w-7xl mx-auto px-6 py-8">
         <div className="mb-8">
-          <h1 className="text-5xl font-bold text-[#2C2C2C] mb-4">
+          <h1 className="text-5xl font-bold text-black mb-4">
             Creative Gallery
           </h1>
-          <p className="text-[#2C2C2C]/70 text-lg">
-            Explore amazing projects from our creative community
+          <p className="text-[#2C2C2C] text-lg">
+            Discover our class moments and creative achievements
           </p>
         </div>
 
