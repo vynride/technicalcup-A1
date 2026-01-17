@@ -25,9 +25,9 @@ export default function Profile({ profile }) {
             "
           >
             <img
-              src="https://images.unsplash.com/photo-1527980965255-d3b416303d12"
+              src={profile.photo || "/mascot-coding.jpeg"}
               alt="Profile"
-              className="w-full h-full object-cover"
+              className="object-cover w-full h-full"
             />
           </div>
 
@@ -43,23 +43,25 @@ export default function Profile({ profile }) {
                 {profile.name}
               </h2>
 
-              <p className="mt-2 text-lg font-bold text-teal-600 italic">
-                "{profile.quote}"
-              </p>
+              {profile.quote && (
+                <p className="mt-2 text-lg font-bold text-teal-600 italic">
+                  "{profile.quote}"
+                </p>
+              )}
 
               <div className="w-full h-1 bg-black/10 my-4 rounded-full"></div>
 
               <ScrollArea className="max-h-[200px] w-full rounded-md border-0 p-0">
                   <p className="text-black leading-relaxed font-medium text-lg pr-4">
-                    {profile.bio}
+                    {profile.bio || "No bio available."}
                   </p>
               </ScrollArea>
             </div>
 
-            <Achievements achievements={profile.achievements} />
+            <Achievements achievements={profile.achievements_and_hobbies ? profile.achievements_and_hobbies.split('\n') : []} />
             <Connect
-              github={profile.github}
-              linkedin={profile.linkedin}
+              github={profile.github_link}
+              linkedin={profile.linkedin_link}
             />
           </div>
         </div>
