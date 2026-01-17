@@ -28,7 +28,7 @@ const Navbar = () => {
                 <nav className="bg-[#1A1A1A] rounded-full px-2 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.2)] pointer-events-auto transition-all duration-300 hover:scale-[1.02] relative">
                     <div className="pl-2 pr-1 flex-shrink-0">
                         <Link href="/">
-                            <Image src="/mascot-with-books.png" alt="Logo" width={40} height={40} className="w-10 h-10 rounded-full object-cover" />
+                            <Image src="/mascot-with-books.webp" alt="Logo" width={40} height={40} className="w-10 h-10 rounded-full object-cover" />
                         </Link>
                     </div>
                     <div className="w-0.5 h-6 bg-[#A8E6CF] mx-1 rounded-full opacity-40"></div>
@@ -71,7 +71,7 @@ const Navbar = () => {
                         <Link href="/" className="block relative group">
                             <div className="absolute inset-0 bg-black rounded-full translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform"></div>
                             <Image 
-                                src="/mascot-with-books.png" 
+                                src="/mascot-with-books.webp" 
                                 alt="Logo" 
                                 width={48} 
                                 height={48} 

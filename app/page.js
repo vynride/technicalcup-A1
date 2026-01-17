@@ -47,7 +47,7 @@ export default function Home() {
             <div className="flex-1 w-full max-w-md lg:max-w-xl">
               <div className="relative aspect-square w-full rounded-2xl border-4 border-black bg-[#A8E6CF] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
                  <Image
-                  src="/mascot-with-books.png"
+                  src="/mascot-with-books.webp"
                   alt="Mascot with books"
                   fill
                   className="object-cover"
@@ -72,7 +72,7 @@ export default function Home() {
            {/* Carousel */}
           <div 
             ref={carouselRef}
-            className="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 lg:px-20 pt-10 pb-12 scrollbar-hide"
+            className="flex overflow-x-auto snap-x snap-mandatory gap-6 pl-6 lg:pl-20 mr-6 lg:mr-20 pt-10 pb-12 scrollbar-hide"
           >
             {profileData.map((person) => (
               <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="snap-center shrink-0">
