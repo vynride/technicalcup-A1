@@ -14,7 +14,7 @@ export default function Home() {
   const carouselRef = useRef(null);
 
   return (
-    <main className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black pt-28">
+    <main className="min-h-screen bg-[#FDFBF0] text-black font-sans selection:bg-teal-300 selection:text-black">
       <Navbar />
       <div className="relative isolate flex flex-col">
         <div className="px-6 lg:px-8 z-10">

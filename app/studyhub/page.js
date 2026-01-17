@@ -133,12 +133,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-[#FFFDF8] p-2 md:p-4 font-[family-name:var(--font-montserrat)] text-black">
       <Navbar />
-      <header className="mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 px-2 md:px-4">
-        <div className="flex items-center gap-6">
-          <div className="w-14 h-14 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-xl shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
-          <div><h1 className="text-3xl font-black uppercase">Welcome back!</h1></div>
-        </div>
-      </header>
+
 
       <main className="mx-auto space-y-6 px-2 md:px-4">
         <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
