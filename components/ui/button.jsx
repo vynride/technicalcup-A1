@@ -11,20 +11,20 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[#A8E6CF] text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
+          "bg-[var(--color-neo-mint)] text-black neo-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm",
         secondary:
-          "bg-white text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
+          "bg-white text-black neo-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm",
         neutral:
-          "bg-[#1A1A1A] text-[#A8E6CF] shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none",
+          "bg-[var(--color-neo-dark)] text-[var(--color-neo-mint)] neo-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none",
         destructive:
-            "bg-red-500 text-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]",
+            "bg-[var(--color-neo-orange)] text-white neo-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm",
         ghost:
             "bg-transparent border-transparent hover:bg-black/5 hover:text-black",
         link: "text-black underline-offset-4 hover:underline bg-transparent border-none shadow-none",
         reverse:
-            "bg-black text-white shadow-none hover:bg-white hover:text-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+            "bg-black text-white shadow-none hover:bg-white hover:text-black hover:neo-shadow",
         orange:
-           "bg-[#FF8F50] text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none"
+           "bg-[var(--color-neo-orange)] text-white neo-shadow-sm hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none"
       },
       size: {
         default: "h-12 px-7 py-3",
