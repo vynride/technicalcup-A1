@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -58,13 +59,16 @@ const Navbar = () => {
                  {/* Mobile Nav Container */}
                  <div className="w-full flex items-center justify-between pointer-events-auto">
                     {/* Hamburger Button (Left) */}
-                    <button 
+                    {/* Hamburger Button (Left) */}
+                    <Button
+                        variant="neutral"
+                        size="icon"
                         onClick={() => setIsOpen(true)}
-                        className="p-2 bg-[#1A1A1A] text-[#A8E6CF] border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all rounded-lg"
+                        className="rounded-lg"
                         aria-label="Open Menu"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-                    </button>
+                    </Button>
 
                     {/* Centered Mascot */}
                     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -101,29 +105,30 @@ const Navbar = () => {
             >
                 <div className="flex justify-between items-center mb-4">
                     <span className="text-2xl font-black text-black tracking-tighter uppercase">Menu</span>
-                    <button 
+                    <Button
+                        variant="secondary"
+                        size="icon"
                         onClick={() => setIsOpen(false)}
-                        className="p-2 bg-white border-2 border-black hover:bg-black hover:text-white transition-colors rounded-lg"
+                        className="rounded-lg hover:bg-black hover:text-white"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 18 18"/></svg>
-                    </button>
+                    </Button>
                 </div>
 
                 <nav className="flex flex-col gap-3">
                     {navItems.map((item) => {
                         const isActive = pathname === item.path;
                         return (
-                            <Link 
-                                key={item.name} 
-                                href={item.path} 
-                                className={`px-4 py-3 text-lg font-bold border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none ${
-                                    isActive 
-                                        ? 'bg-[#1A1A1A] text-[#A8E6CF]' 
-                                        : 'bg-white text-black hover:bg-gray-50'
-                                }`}
+                            <Button
+                                asChild
+                                key={item.name}
+                                variant={isActive ? "neutral" : "secondary"}
+                                className={`w-full justify-start text-lg font-bold h-auto py-3 ${!isActive && 'hover:bg-gray-50'}`}
                             >
-                                {item.name}
-                            </Link>
+                                <Link href={item.path}>
+                                    {item.name}
+                                </Link>
+                            </Button>
                         );
                     })}
                 </nav>

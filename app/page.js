@@ -7,6 +7,8 @@ import Image from "next/image";
 import ImageCard from "@/components/ui/image-card";
 import profileData from "@/data/profile.json";
 
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   const carouselRef = useRef(null);
 
@@ -28,18 +30,14 @@ export default function Home() {
                 Explore our journey, read our latest updates, and see what makes our team stand out.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                <Link
-                  href="/blog"
-                  className="w-full sm:w-auto text-center rounded-full border-2 border-black bg-[#A8E6CF] px-7 py-3 text-sm font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
-                >
-                  Read Blog
-                </Link>
-                <Link
-                  href="/gallery"
-                  className="w-full sm:w-auto text-center rounded-full border-2 border-black bg-white px-7 py-3 text-sm font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
-                >
-                  View Gallery <span aria-hidden="true">→</span>
-                </Link>
+                <Button asChild variant="default" className="w-full sm:w-auto text-base">
+                    <Link href="/blog">Read Blog</Link>
+                </Button>
+                <Button asChild variant="secondary" className="w-full sm:w-auto text-base">
+                    <Link href="/gallery">
+                        View Gallery <span aria-hidden="true">→</span>
+                    </Link>
+                </Button>
               </div>
             </div>
 

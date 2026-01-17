@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, Clock, BookOpen, CheckCircle, MoreHorizontal, Settings, Plus, ArrowUpRight } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: 'Study Hub',
@@ -14,9 +15,16 @@ const Box = ({ children, className = "" }) => (
 );
 
 const Filter = ({ label, active = false }) => (
-  <button className={`whitespace-nowrap px-6 py-2 rounded-full border-2 border-black text-sm font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
+  <Button
+    variant={active ? "default" : "secondary"}
+    className={`whitespace-nowrap rounded-full border-2 border-black text-sm font-bold transition-all h-auto py-2 px-6 ${
+      active
+        ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0 hover:translate-y-0'
+        : 'bg-white text-gray-700 shadow-none hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-0 hover:translate-y-0'
+    }`}
+  >
     {label}
-  </button>
+  </Button>
 );
 
 export default function Dashboard() {
@@ -28,7 +36,7 @@ export default function Dashboard() {
           <div className="w-12 h-12 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">PG</div>
           <div><h1 className="text-2xl font-black uppercase">Welcome back!</h1></div>
         </div>
-        <button className="w-full sm:w-auto bg-black text-white px-8 py-3 rounded-full font-bold border-2 border-black hover:bg-white hover:text-black hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all">Start Session</button>
+        <Button variant="reverse" className="w-full sm:w-auto">Start Session</Button>
       </header>
 
       <main className="max-w-7xl mx-auto space-y-6">
@@ -37,7 +45,7 @@ export default function Dashboard() {
             <h2 className="text-4xl font-extrabold tracking-tight">Weekly Schedule</h2>
             <div className="flex items-center gap-3 mt-6 overflow-x-auto pb-2 scrollbar-hide">
               {['All', 'Discrete Math', 'Algorithms', 'Networks'].map((l, i) => <Filter key={l} label={l} active={i === 2} />)}
-              <button className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-[#FF8F50] border-2 border-black text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={20} /></button>
+              <Button variant="orange" size="icon" className="shrink-0 rounded-full"><Plus size={20} /></Button>
             </div>
           </div>
           <div className="flex gap-12 bg-white/50 p-4 rounded-2xl lg:bg-transparent lg:p-0">
@@ -53,7 +61,7 @@ export default function Dashboard() {
                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-purple-600"><BookOpen size={20} /></div>
                 <div><p className="text-xs font-bold text-purple-900">Focus</p><p className="text-sm font-medium text-purple-800">Algorithms</p></div>
               </div>
-              <button className="w-10 h-10 bg-[#FF8F50] rounded-full flex items-center justify-center text-white"><Settings size={18} /></button>
+              <Button variant="orange" size="icon" className="rounded-full shadow-none hover:shadow-none"><Settings size={18} /></Button>
             </div>
 
             <div className="flex flex-col md:flex-row gap-4 z-10">
@@ -70,7 +78,10 @@ export default function Dashboard() {
               <div className="bg-[#1A1A1A] text-white p-5 rounded-[1.5rem] border-2 border-black flex-1 flex flex-col justify-between">
                 <div>
                     <h3 className="text-gray-400 text-sm mb-3">Plan</h3>
-                    <div className="flex gap-2"><button className="px-4 py-2 bg-[#2D2D2D] rounded-full text-xs">Lecture</button><button className="px-4 py-2 bg-[#A8E6CF] text-black font-bold rounded-full text-xs">Practice</button></div>
+                    <div className="flex gap-2">
+                        <Button className="h-auto py-2 px-4 bg-[#2D2D2D] rounded-full text-xs text-white border-0 shadow-none hover:bg-[#2D2D2D]">Lecture</Button>
+                        <Button className="h-auto py-2 px-4 bg-[#A8E6CF] rounded-full text-xs text-black border-0 shadow-none hover:bg-[#A8E6CF]">Practice</Button>
+                    </div>
                 </div>
                 <div className="bg-[#A8E6CF] text-black p-4 rounded-2xl">
                     <div className="flex justify-between"><p className="text-[10px] font-bold uppercase">Deadline</p><ArrowUpRight size={16}/></div>
