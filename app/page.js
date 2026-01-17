@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           
            {/* Carousel */}
-          <ScrollArea className="w-full whitespace-nowrap pb-4 mr-6 lg:mr-20">
+          <ScrollArea className="whitespace-nowrap pb-4 mr-6 lg:mr-20">
             <div className="flex w-max gap-6 px-6 lg:px-20 pt-10 pb-12">
               {profileData.map((person) => (
                 <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="shrink-0">
@@ -83,6 +83,7 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+            <ScrollBar orientation="horizontal" className="hidden" />
           </ScrollArea>
         </section>
       </div>
