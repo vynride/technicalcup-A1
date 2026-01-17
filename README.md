@@ -1,7 +1,14 @@
 # 🏆 Section A1 - Web Wars: Section Showdown
 
-## 🚀 Live Demo
-**[https://technicalcup-a1.vercel.app/](https://technicalcup-a1.vercel.app/)**
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployment-7928CA?style=for-the-badge&logo=vercel&logoColor=white)](https://technicalcup-a1.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.0-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Neobrutalism.dev](https://img.shields.io/badge/✨_Neobrutalism_-Components-97bfff?style=for-the-badge&logoColor=black)](https://www.neobrutalism.dev/)
+
+<div align="center">
+  <img src="public/mascot-with-books.webp" alt="Section A1 Mascot" width="350" />
+</div>
+
+
 
 ## 🛠️ Tech Stack
 
@@ -10,6 +17,7 @@ This project is built using a modern, performance-first stack:
 *   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
 *   **Language**: JavaScript
 *   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Components**: [Neobrutalism.dev](https://www.neobrutalism.dev/)
 *   **Icons**: [Lucide React](https://lucide.dev/)
 *   **Smooth Scrolling**: [Lenis](https://lenis.studio/)
 *   **Fonts**: Montserrat (via `next/font`)
