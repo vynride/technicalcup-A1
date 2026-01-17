@@ -133,6 +133,9 @@ const Navbar = () => {
                     })}
                 </nav>
             </aside>
+
+            {/* Spacer to prevent overlapping content */}
+            <div className="h-20 md:h-28 w-full" aria-hidden="true" />
         </>
     );
 };
