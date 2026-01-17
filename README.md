@@ -40,6 +40,12 @@ We have implemented comprehensive SEO practices to ensure maximum visibility:
 *   **Dynamic Sitemap**: Automatically generated `sitemap.xml` listing all routes (`/`, `/blog`, `/studyhub`, etc.).
 *   **Robots.txt**: Configured to allow indexing and point crawlers to the sitemap.
 
+### 3. UI Components Challenge
+We have integrated **Neobrutalism.dev**'s component library to enhance our design system, focusing on reusability and aesthetics.
+*   **[Scroll Area](https://www.neobrutalism.dev/docs/scroll-area)**: Used in the **Home Page** hero section, **Blog Timeline** event descriptions, and **Profile Page** bio section.
+*   **[Button](https://www.neobrutalism.dev/docs/button)**: Used extensively throughout the site, including the **Navbar**, **Home Page** CTAs, and the **Study Hub** dashboard controls.
+*   **[Image Card](https://www.neobrutalism.dev/docs/image-card)**: Used in the **The People** section on the Home Page to display team member profiles with a distinct hover effect.
+
 ## Getting Started
 
 1.  **Clone the repository**:

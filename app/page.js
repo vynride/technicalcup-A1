@@ -7,6 +7,9 @@ import Image from "next/image";
 import ImageCard from "@/components/ui/image-card";
 import profileData from "@/data/profile.json";
 
+import { Button } from "@/components/ui/button";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+
 export default function Home() {
   const carouselRef = useRef(null);
 
@@ -24,22 +27,20 @@ export default function Home() {
               <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl drop-shadow-[2px_2px_0px_rgba(0,0,0,0.1)]">
                 Welcome to <span className="text-teal-600"> Section A1</span>
               </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-800 font-medium">
-                Explore our journey, read our latest updates, and see what makes our team stand out.
-              </p>
+              <ScrollArea className="mt-6 w-full rounded-md border-2 border-black bg-[#A8E6CF] p-4 text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                <p className="text-lg leading-8 text-gray-800 font-medium">
+                  Explore our journey, read our latest updates, and see what makes our team stand out.
+                </p>
+              </ScrollArea>
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-                <Link
-                  href="/blog"
-                  className="w-full sm:w-auto text-center rounded-full border-2 border-black bg-[#A8E6CF] px-7 py-3 text-sm font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
-                >
-                  Read Blog
-                </Link>
-                <Link
-                  href="/gallery"
-                  className="w-full sm:w-auto text-center rounded-full border-2 border-black bg-white px-7 py-3 text-sm font-bold text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all duration-200"
-                >
-                  View Gallery <span aria-hidden="true">→</span>
-                </Link>
+                <Button asChild className="w-full sm:w-auto text-base bg-yellow-400 hover:bg-yellow-500 text-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                    <Link href="/blog">Read Blog</Link>
+                </Button>
+                <Button asChild className="w-full sm:w-auto text-base bg-blue-400 hover:bg-blue-500 text-black border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
+                    <Link href="/gallery">
+                        View Gallery <span aria-hidden="true">→</span>
+                    </Link>
+                </Button>
               </div>
             </div>
 
@@ -47,7 +48,7 @@ export default function Home() {
             <div className="flex-1 w-full max-w-md lg:max-w-xl">
               <div className="relative aspect-square w-full rounded-2xl border-4 border-black bg-[#A8E6CF] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
                  <Image
-                  src="/mascot-with-books.png"
+                  src="/mascot-with-books.webp"
                   alt="Mascot with books"
                   fill
                   className="object-cover"
@@ -70,20 +71,20 @@ export default function Home() {
           </div>
           
            {/* Carousel */}
-          <div 
-            ref={carouselRef}
-            className="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 lg:px-20 pt-10 pb-12 scrollbar-hide"
-          >
-            {profileData.map((person) => (
-              <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="snap-center shrink-0">
-                  <ImageCard
-                    imageUrl="/mascot-coding.jpeg"
-                    caption={person.name}
-                    className="hover:-translate-y-2 transition-transform duration-200"
-                  />
-              </Link>
-            ))}
-          </div>
+          <ScrollArea className="whitespace-nowrap pb-4 mr-6 lg:mr-20">
+            <div className="flex w-max gap-6 px-6 lg:px-20 pt-10 pb-12">
+              {profileData.map((person) => (
+                <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="shrink-0">
+                    <ImageCard
+                      imageUrl="/mascot-coding.jpeg"
+                      caption={person.name}
+                      className="hover:-translate-y-2 transition-transform duration-200"
+                    />
+                </Link>
+              ))}
+            </div>
+            <ScrollBar orientation="horizontal" className="hidden" />
+          </ScrollArea>
         </section>
       </div>
     </main>

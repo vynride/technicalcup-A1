@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Section A1 Technical Cup",
     images: [
       {
-        url: "/mascot-with-books.png",
+        url: "/mascot-with-books.webp",
         width: 800,
         height: 600,
         alt: "Section A1 Mascot",
@@ -37,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Section A1 | Web Wars: Section Showdown",
     description: "Technical Cup - Section A1's Section Showdown website",
-    images: ["/mascot-with-books.png"],
+    images: ["/mascot-with-books.webp"],
   },
   robots: {
     index: true,
