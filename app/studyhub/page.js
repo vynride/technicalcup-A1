@@ -26,7 +26,7 @@ const Box = ({ children, className = "" }) => (
 const Filter = ({ label, active = false }) => (
   <button className={`whitespace-nowrap px-6 py-3 rounded-full border-2 border-black text-base font-bold transition-all ${active ? 'bg-[#A8E6CF] text-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]' : 'bg-white text-gray-700 hover:bg-gray-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]'}`}>
     {label}
-  </Button>
+  </button>
 );
 
 export default function Dashboard() {
