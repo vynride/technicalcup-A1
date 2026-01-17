@@ -10,23 +10,26 @@ export default function Connect({ github, linkedin }) {
         Connect
       </h3>
 
-      <a
-        href={github}
-        target="_blank"
-        className="flex items-center gap-3 text-sm font-bold text-black
-        hover:translate-x-0.5 transition"
-      >
-        <Github size={18} /> GitHub
-      </a>
+      {github && (
+        <a
+          href={github}
+          target="_blank"
+          className="flex items-center gap-3 text-sm font-bold text-black
+          hover:translate-x-0.5 transition"
+        >
+          <Github size={18} /> GitHub
+        </a>
+      )}
 
-      <a
-        href={linkedin}
-        target="_blank"
-        className="mt-3 flex items-center gap-3 text-sm font-bold text-black
-        hover:translate-x-0.5 transition"
-      >
-        <Linkedin size={18} /> LinkedIn
-      </a>
+      {linkedin && (
+        <a
+          href={linkedin}
+          target="_blank"
+          className={github ? "mt-3 flex items-center gap-3 text-sm font-bold text-black hover:translate-x-0.5 transition" : "flex items-center gap-3 text-sm font-bold text-black hover:translate-x-0.5 transition"}
+        >
+          <Linkedin size={18} /> LinkedIn
+        </a>
+      )}
     </div>
   );
 }

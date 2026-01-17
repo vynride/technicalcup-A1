@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Image from "next/image";
 import ImageCard from "@/components/ui/image-card";
-import profileData from "@/data/profile.json";
+import profileData from "@/data/profiles.json";
 
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -74,9 +74,9 @@ export default function Home() {
           <ScrollArea className="whitespace-nowrap pb-4 mr-6 lg:mr-20">
             <div className="flex w-max gap-6 px-6 lg:px-20 pt-10 pb-12">
               {profileData.map((person) => (
-                <Link href={`/profile/${person._id.$oid}`} key={person._id.$oid} className="shrink-0">
+                <Link href={`/profile/${person.id}`} key={person.id} className="shrink-0">
                     <ImageCard
-                      imageUrl="/mascot-coding.jpeg"
+                      imageUrl={person.photo || "/mascot-coding.jpeg"}
                       caption={person.name}
                       className="hover:-translate-y-2 transition-transform duration-200"
                     />
