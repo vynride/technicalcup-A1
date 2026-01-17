@@ -1,5 +1,6 @@
 import Achievements from "./Achievements";
 import Connect from "./Connect";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Profile({ profile }) {
   return (
@@ -48,9 +49,11 @@ export default function Profile({ profile }) {
 
               <div className="w-full h-1 bg-black/10 my-4 rounded-full"></div>
 
-              <p className="text-black leading-relaxed font-medium text-lg">
-                {profile.bio}
-              </p>
+              <ScrollArea className="max-h-[200px] w-full rounded-md border-0 p-0">
+                  <p className="text-black leading-relaxed font-medium text-lg pr-4">
+                    {profile.bio}
+                  </p>
+              </ScrollArea>
             </div>
 
             <Achievements achievements={profile.achievements} />
