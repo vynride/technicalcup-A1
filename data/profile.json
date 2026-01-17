@@ -1,0 +1,378 @@
+[
+  {
+    "_id": {
+      "$oid": "6c11454781a64850be6713c7"
+    },
+    "name": "Sharvan kotharu",
+    "quote": "Past is a history , future is a mystery ,focus on present or else it's  gonna be a misery",
+    "bio": "A computer science undergrad who loves clean design, sharp logic, and ambitious ideas. From LeetCode and hackathons to posters and creative visuals, I enjoy mixing tech with creativity. Big believer in discipline, growth, and doing things properly — not just quickly.",
+    "achievements": [
+      "1)Photography, particularly nature and aesthetic shots. 2)Sports (Cricket & Table Tennis) 3)Probelm solving"
+    ],
+    "github": "https://github.com/dev-lov-oper",
+    "linkedin": "https://www.linkedin.com/in/sharvan-kotharu-47486b208/"
+  },
+  {
+    "_id": {
+      "$oid": "1ffb0c3bfb1d4fe7bce58c22"
+    },
+    "name": "Adarsh Jha",
+    "quote": "If you aren't sure which way to do something, do it both ways and see which works better",
+    "bio": "I’m a Computer Science Engineering student who loves coding, problem-solving, and playing around with math. I enjoy breaking complicated logic into simple stuff and then building it back in a smarter way. I explore core computer science concepts mostly out of curiosity. Apart from tech, I’m really into science and astronomy—learning about stars, galaxies, and the crazy physics that keeps the universe running.\n\nWhen I’m not coding, you’ll probably find me watching sci-fi series, horror movies, or anime, playing badminton, or experimenting in the kitchen because I genuinely enjoy cooking. I’m a big fan of cats and pandas, try to stay calm and patient in most situations, and I like being helpful to others. I’m always enthusiastic about learning, growing, and providing real value wherever I can.",
+    "achievements": [
+      "Achievement : Staying peaceful while growing and learning. Hobbies: Playing Badminton Watching Anime Travelling Cooking Trying New Things"
+    ],
+    "github": "https://github.com/Adarsh2709",
+    "linkedin": "https://www.linkedin.com/in/adarsh-jha-3a814a321/"
+  },
+  {
+    "_id": {
+      "$oid": "a20e13ff7c6e45d3be7d3395"
+    },
+    "name": "Vivian Richard Demello",
+    "quote": "The meaning of life is to give life meaning",
+    "bio": "Hackathon Junkie 🙂‍↔️",
+    "achievements": [
+      "2xHackathon winner"
+    ],
+    "github": "https://github.com/vynride/",
+    "linkedin": "https://www.linkedin.com/in/viviandemello/"
+  },
+  {
+    "_id": {
+      "$oid": "1a7752a42f964c46b8987809"
+    },
+    "name": "Shardul Pathak",
+    "quote": "Error: Sleep.exe not found. Running on Coffee.lib and sheer willpower.",
+    "bio": "Hi there! I’m a CSE undergrad currently majoring in Context Switching. In a world where new frameworks are born faster than I can finish a cup of coffee, I spend my days (and way too many nights) juggling the entire tech ecosystem. I’m not just learning to code; I’m learning to survive the \"Modern Tech Stack.\"",
+    "achievements": [
+      "Hobbies: Sports, Music and Reading",
+      "Achievements: Top 10 at Genathon"
+    ],
+    "github": "https://github.com/Shardul-Pathak",
+    "linkedin": "https://www.linkedin.com/in/shardulpathak07"
+  },
+  {
+    "_id": {
+      "$oid": "b8deaff639fd4b37a1698f76"
+    },
+    "name": "Meenakshi Motwani",
+    "quote": "\"Reserved in expression, resolute in purpose.\"",
+    "bio": "A 20 yr-old quietly working toward clarity, competence, and self-respect.",
+    "achievements": [
+      "Achievements: Successfully Overthinked for 365 days last year OSA's Orator of the Month",
+      "September 2024 CBSE class 12th school topper in subject Computer Science   Hobbies: Cracking Unfunny Jokes Making meme references that require 12 hrs of screentime to understand Listening to Music  Watching Movies"
+    ],
+    "github": "https://github.com/mimi3112",
+    "linkedin": "https://www.linkedin.com/in/meenakshi-motwani-563757323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "9d32c38c77054010bfc7827b"
+    },
+    "name": "Apeksha Sharma",
+    "quote": "The end is the beginning",
+    "bio": "Hakuna matata",
+    "achievements": [
+      "Achievements",
+      "Not achieved yet  Hobby",
+      "Reading"
+    ],
+    "github": "https://github.com/apeksha-3",
+    "linkedin": "https://www.linkedin.com/in/apeksha-sharma-880422371"
+  },
+  {
+    "_id": {
+      "$oid": "594f5cd631804b2ea1bc2536"
+    },
+    "name": "Anuj Lulu",
+    "quote": "“The future belongs to those who prepare for it today.”",
+    "bio": "Computer science student with a deep interest in technology and a strong drive to push ideas until they solve real problems. Not particularly drawn to intensive competitive programming, but I enjoy dissecting how problems are designed and exploring solutions at my own pace. I thrive in hackathons, especially under tight time constraints. The pressure and high stakes energize me. That sense of challenge and intensity is what I actually seek, both in tech and beyond.",
+    "achievements": [
+      "Playing games, watching movies and series, exploring technologies, eating good food."
+    ],
+    "github": "https://github.com/ANUJ760",
+    "linkedin": "https://www.linkedin.com/in/anuj-lulu-026554324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "c4c653dafe814e9484a4182c"
+    },
+    "name": "RIDDHI DUGAD",
+    "quote": "“I am my own competition.”\n“Built from dreams, driven by discipline.”\n“I rise even when it’s hard.”\n“Not perfect, just unstoppable.”",
+    "bio": "Curious learner with a passion for startups, innovation and technology. I love exploring new ideas, building skills and constantly upgrading myself. Driven by growth, creativity and a desire to make an impact.",
+    "achievements": [
+      "Hobbies",
+      "Travelling",
+      "Dancing",
+      "Painting",
+      "Learning about startups & innovations"
+    ],
+    "github": "https://github.com/RiddhiDugad",
+    "linkedin": "https://www.linkedin.com/in/riddhi-dugad/"
+  },
+  {
+    "_id": {
+      "$oid": "b9cf349d4c9f4170aec09da1"
+    },
+    "name": "Antara Kawathekar",
+    "quote": "Turning abstract 'whys' into functional 'hows'.",
+    "bio": "\"If reality is the destination, imagination is the map.\"\nI am Antara Kawathekar, and I have a bit of an obsession with the foundations of things. As a student of Computer Science, I spend my time investigating the thin line where abstract theories meet technical execution.\nI believe that to truly innovate, we must be willing to deconstruct reality and look at the 'imaginary' possibilities beneath it. My journey is defined by a persistent curiosity and a commitment to understanding the first principles of every challenge I encounter.",
+    "achievements": [
+      "Achievements : Intermediate Drawing exam: A grade",
+      "Nagpur Division 10th board topper, awarded for various drawing competitions, participated and got recognised in Raman Science Centers various quizzes Hobbies : exploring new things, writing poem, playing chess, drawing/painting"
+    ],
+    "github": "https://github.com/antara2409",
+    "linkedin": "https://www.linkedin.com/in/antara-kawathekar-2a077b326/"
+  },
+  {
+    "_id": {
+      "$oid": "c3e8dc90350b4bf18566cc3d"
+    },
+    "name": "Parth Gupta",
+    "quote": "Still Becoming",
+    "bio": "Not a genius, just very curious. Learning, unlearning, and upgrading life one day at a time",
+    "achievements": [],
+    "github": "",
+    "linkedin": ""
+  },
+  {
+    "_id": {
+      "$oid": "c1a166bc467b4c72845b4596"
+    },
+    "name": "Reeti Khandelwal",
+    "quote": "I grow through reflection",
+    "bio": "I take time to reflect, learn, and grow from everything I experience. I believe self-awareness and curiosity are key to becoming my best self.",
+    "achievements": [
+      "Art + technology (Blending creativity with technology)"
+    ],
+    "github": "https://github.com/Reeti090206",
+    "linkedin": "https://www.linkedin.com/in/reeti-khandelwal-58042a34a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "2b2fc0f5af4847998b499a1d"
+    },
+    "name": "Harsh Agrawal",
+    "quote": "Life is too important to be taken seriously",
+    "bio": "A developer who values clarity in code and purpose in projects. Whether analyzing data structures or exploring green energy solutions, I approach problems with a long-term perspective. I am dedicated to continuous learning and building technology that serves a human need.",
+    "achievements": [
+      "Hobbies: Play Badminton",
+      "Play Cricket , play Guitar , go for hiking"
+    ],
+    "github": "https://github.com/harshagrawal11",
+    "linkedin": "https://www.linkedin.com/in/harshagrawal3546"
+  },
+  {
+    "_id": {
+      "$oid": "c7044c2ed3a54927b6f295f0"
+    },
+    "name": "Priyanka Bala",
+    "quote": "Built for the spotlight, made for the story.",
+    "bio": "A heart that feels too much, a mind that won’t be fooled. I live loud, love deeper, and add drama wherever I go.",
+    "achievements": [
+      "Achievements: Successfully survived my own emotional rollercoaster multiple times",
+      "Well that’s about it, nothing else worth mentioning. Hobbies: Dance,exploring new places and cuisines",
+      "Watching tv serials"
+    ],
+    "github": "https://github.com/PriyankaBala18",
+    "linkedin": "https://www.linkedin.com/in/priyanka-bala-1a7071375/"
+  },
+  {
+    "_id": {
+      "$oid": "16f87b9001c849538203909d"
+    },
+    "name": "Srushti Khandelwal",
+    "quote": "“Built from curiosity, courage, and a little chaos.”",
+    "bio": "Unbothered",
+    "achievements": [],
+    "github": "https://github.com/SrushtiKhandelwal",
+    "linkedin": "https://www.linkedin.com/in/srushtikhandelwal"
+  },
+  {
+    "_id": {
+      "$oid": "fe98b7f7916c472db84a7ea3"
+    },
+    "name": "Siddhi Tapase",
+    "quote": "\"Swimming through challenges, Coding through solutions\"",
+    "bio": "I'm Siddhi Tapase, sophomore @RBU'28 persuing Btech CSE with strong interest in software development and learning new technologies. I'm also an national level swimmer, I love taking on new challenges both in academics and in sports.",
+    "achievements": [
+      "National",
+      "level swimmer and triathlon winner. Tech enthusiast",
+      "experimenting with gadgets, building small projects and exploring new software."
+    ],
+    "github": "https://github.com/Siddhitapase20",
+    "linkedin": "https://www.linkedin.com/in/siddhi-tapase-215939323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "cc8d8a2d47844b10994b4393"
+    },
+    "name": "Esha Ghosh",
+    "quote": "Quiet effort, sharp focus, and a rise that speaks for itself.",
+    "bio": "Calm on the outside, always thinking on the inside.\nI believe in growth, good vibes, and doing things properly—or not at all.",
+    "achievements": [
+      "Cooking and Baking"
+    ],
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/esha-ghosh-297158321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+  {
+    "_id": {
+      "$oid": "6c07dd66ed5c44c3a2ff6691"
+    },
+    "name": "Kimaya Chandrakant Bhaskar",
+    "quote": "Beyond the familiar, I choose courage as it blooms; lessons rise, and the journey shapes who I am meant to become.",
+    "bio": "Rising through challenges. Warrior of heart. Guided by the journey.",
+    "achievements": [
+      "Travelling",
+      "Listening to music",
+      "Reading",
+      "Playing Badminton"
+    ],
+    "github": "https://github.com/Kimaya0310",
+    "linkedin": "https://www.linkedin.com/in/kimaya-bhaskar-594194321/"
+  },
+  {
+    "_id": {
+      "$oid": "b5afbc2d7cd94e49ad997e9a"
+    },
+    "name": "Purva Parmar",
+    "quote": "Art should comfort the disturbed and disturb the comfortable",
+    "bio": "Cheerful and passionate.",
+    "achievements": [
+      "Photography, listening to songs"
+    ],
+    "github": "https://github.com/purva-parmar",
+    "linkedin": "https://www.linkedin.com/in/purva-parmar-b596a4326"
+  },
+  {
+    "_id": {
+      "$oid": "e287121ff11f4e569a8c8875"
+    },
+    "name": "Hardik Sharma",
+    "quote": "In a world without gold, we might have been heroes.",
+    "bio": "Nothing is true, everything is permitted.",
+    "achievements": [
+      "Reading",
+      "Gaming",
+      "Chess.  Ex",
+      "Verified Developer at Discord."
+    ],
+    "github": "https://github.com/26hardiksharma",
+    "linkedin": "https://www.linkedin.com/in/hardik-sharma-031234321/"
+  },
+  {
+    "_id": {
+      "$oid": "20b093c2ae3a49abac4bcb15"
+    },
+    "name": "Drushhti Kuhikar",
+    "quote": "“Silence is my strategy; consistency is my power.”",
+    "bio": "Not loud — just consistent.",
+    "achievements": [
+      "Achieved 5th place in the Space Innovation Challenge at VNIT Nagpur’s AXIS’20 tech festival. HOBBIES:",
+      "Travelling and exploring new places",
+      "Gardening",
+      "Sketching",
+      "Coding"
+    ],
+    "github": "https://github.com/Drushhti20",
+    "linkedin": "https://www.linkedin.com/in/drushhti-kuhikar-907503376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "12262d07b4be4b00badb6416"
+    },
+    "name": "Anandi Bhute",
+    "quote": "Nothing on the outside, nothing on the inside.",
+    "bio": "And if everything fails, I can always marry THE RICH!",
+    "achievements": [
+      "Achievement: Survived 19 years without killing anyone  ^~^   Hobbies: Watching Anime. Complaining. Listening to music. Doing things I am told not to do."
+    ],
+    "github": "https://github.com/AnandiBhute",
+    "linkedin": "https://www.linkedin.com/in/anandi-bhute-179314367/"
+  },
+  {
+    "_id": {
+      "$oid": "5f2dddfea1ea4650a835ad60"
+    },
+    "name": "Gargi Kulkarni",
+    "quote": "Chaos with a side of brilliance",
+    "bio": "Cse 2nd yr",
+    "achievements": [],
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/gargi-kulkarni-22552a318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  },
+  {
+    "_id": {
+      "$oid": "a369bb2ed7cf41ad931d5d5a"
+    },
+    "name": "Arushi Jaiswal",
+    "quote": "Don't wait for clarity, just begin",
+    "bio": "Exploring new things constantly",
+    "achievements": [
+      "Reading very easily tops the list when hobbies are mentioned!"
+    ],
+    "github": "https://github.com/jaiswalA06",
+    "linkedin": "https://www.linkedin.com/in/arushi-jaiswal-35a393321"
+  },
+  {
+    "_id": {
+      "$oid": "10a6af188991441cb0dfd1da"
+    },
+    "name": "Sai Nandekar",
+    "quote": "What makes you happy doesn't have to make sense",
+    "bio": "I am a second year student currently in 4th semester. I'm eager to learn as much as I can this semester.",
+    "achievements": [],
+    "github": "",
+    "linkedin": "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav"
+  },
+  {
+    "_id": {
+      "$oid": "37be4156257b4b8394286790"
+    },
+    "name": "Sarthak Siddharth Shrungarpawar",
+    "quote": "Life is like riding a bicycle. To keep your balance, you must keep moving.",
+    "bio": "I was smiling yesterday, I am smiling today and I will be smiling tomorrow because life is too short to cry for anything.",
+    "achievements": [
+      "Playing chess , badminton"
+    ],
+    "github": "https://github.com/sarthakshrungarpawar",
+    "linkedin": "https://www.linkedin.com/in/sarthak-shrungarpawar-178330321/"
+  },
+  {
+    "_id": {
+      "$oid": "89ca3904eb044768af2a88ec"
+    },
+    "name": "Ananya Anand",
+    "quote": "Still loading… but the update is going to be powerful.",
+    "bio": "Learning, failing, fixing, and repeating. Powered by curiosity, deadlines, and the dream to build something that matters.",
+    "achievements": [
+      "I was selected for ACM Winter School conducted at IIT Ropar. My hobbies include dance, reading, drawing and painting."
+    ],
+    "github": "https://github.com/AnanyaAnand107",
+    "linkedin": "https://www.linkedin.com/in/ananya-anand-a6763b338"
+  },
+  {
+    "_id": {
+      "$oid": "e908ad9ef70c4ad997657521"
+    },
+    "name": "Kripa Tawri",
+    "quote": "It's always the little things!",
+    "bio": "Passionate about business, sports, dance & music. Always open to learning and new experiences.",
+    "achievements": [],
+    "github": "",
+    "linkedin": "https://www.linkedin.com/in/kripa-tawri-24a283309/"
+  },
+  {
+    "_id": {
+      "$oid": "7e8dfde506d44212bd610751"
+    },
+    "name": "Vaishnavi Singh",
+    "quote": "\" Hi Chaos Cordinator Here\"",
+    "bio": "No need of bio",
+    "achievements": [],
+    "github": "https://github.com/Vaishnavi-7107",
+    "linkedin": "https://www.linkedin.com/in/vaishnavi-singh-83b7a4368/"
+  }
+]

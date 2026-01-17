@@ -1,0 +1,225 @@
+{
+  "timetable": {
+    "Monday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "MDM - II",
+        "teacher": "",
+        "room": "",
+        "type": "Lecture",
+        "color": "bg-blue-100"
+      },
+      {
+        "time": "10:00 - 11:00",
+        "className": "Artificial Intelligence (AI)",
+        "teacher": "Prof. Aparna Gurjar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-cyan-100"
+      },
+      {
+        "time": "11:00 - 12:00",
+        "className": "Computer Design (CD)",
+        "teacher": "Dr. M B Chandak",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-purple-100"
+      },
+      {
+        "time": "12:00 - 01:00",
+        "className": "Recess",
+        "teacher": "-",
+        "room": "-",
+        "type": "Break",
+        "color": "bg-yellow-100"
+      },
+      {
+        "time": "01:00 - 02:00",
+        "className": "Database Management Systems (DBMS)",
+        "teacher": "Dr. A. Raipurkar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-green-100"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "MDM - II",
+        "teacher": "",
+        "room": "",
+        "type": "Lecture",
+        "color": "bg-blue-100"
+      },
+      {
+        "time": "10:00 - 11:00",
+        "className": "Artificial Intelligence (AI)",
+        "teacher": "Prof. Aparna Gurjar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-cyan-100"
+      },
+      {
+        "time": "11:00 - 12:00",
+        "className": "Computer Design (CD)",
+        "teacher": "Dr. M B Chandak",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-purple-100"
+      },
+      {
+        "time": "12:00 - 01:00",
+        "className": "Recess",
+        "teacher": "-",
+        "room": "-",
+        "type": "Break",
+        "color": "bg-yellow-100"
+      },
+      {
+        "time": "01:00 - 02:00",
+        "className": "Database Management Systems (DBMS)",
+        "teacher": "Dr. A. Raipurkar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-green-100"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "MDM - II",
+        "teacher": "",
+        "room": "",
+        "type": "Lecture",
+        "color": "bg-blue-100"
+      },
+      {
+        "time": "10:00 - 11:00",
+        "className": "Open Elective (OE)",
+        "teacher": "",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-indigo-100"
+      },
+      {
+        "time": "11:00 - 12:00",
+        "className": "Computer Design (CD)",
+        "teacher": "Dr. M B Chandak",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-purple-100"
+      },
+      {
+        "time": "12:00 - 01:00",
+        "className": "Recess",
+        "teacher": "-",
+        "room": "-",
+        "type": "Break",
+        "color": "bg-yellow-100"
+      },
+      {
+        "time": "01:00 - 02:00",
+        "className": "Database Management Systems (DBMS)",
+        "teacher": "Dr. A. Raipurkar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-green-100"
+      },
+      {
+        "time": "02:00 - 03:00",
+        "className": "DBMS Lab (B1/B2) / Software Lab II (B3/B4)",
+        "teacher": "B1: A. Raipurkar, B2: S. Ghodeswar // B3: S. Rawat, B4: S. Quazi",
+        "room": "DT-205 / DT-211",
+        "type": "Lab",
+        "color": "bg-lime-100"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "Creativity, Innovation & Design Thinking (CIDT)",
+        "teacher": "Dr. Rashmi Shahu",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-orange-100"
+      },
+      {
+        "time": "10:00 - 11:00",
+        "className": "DBMS Lab (B1/B2) / AI Lab (B3/B4)",
+        "teacher": "B1: A. Raipurkar, B2: S. Ghodeswar // B3: A. Gurjar, B4: S. Deshmukh",
+        "room": "DT-205 / DT-211",
+        "type": "Lab",
+        "color": "bg-teal-100"
+      },
+      {
+        "time": "12:00 - 01:00",
+        "className": "Recess",
+        "teacher": "-",
+        "room": "-",
+        "type": "Break",
+        "color": "bg-yellow-100"
+      },
+      {
+        "time": "01:00 - 02:00",
+        "className": "Artificial Intelligence (AI)",
+        "teacher": "Prof. Aparna Gurjar",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-cyan-100"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "Creativity, Innovation & Design Thinking (CIDT)",
+        "teacher": "Dr. Rashmi Shahu",
+        "room": "DT-212",
+        "type": "Lecture",
+        "color": "bg-orange-100"
+      },
+      {
+        "time": "10:00 - 11:00",
+        "className": "Software Lab II (B1/B2) / AI Lab (B3/B4)",
+        "teacher": "B1: P. Pardhi, B2: S. Quazi // B3: A. Gurjar, B4: S. Deshmukh",
+        "room": "DT-205 / DT-211",
+        "type": "Lab",
+        "color": "bg-rose-100"
+      },
+      {
+        "time": "11:00 - 12:00",
+        "className": "Mentor/Mentee Slot (Bi-Weekly)",
+        "teacher": "",
+        "room": "",
+        "type": "Session",
+        "color": "bg-amber-100"
+      }
+    ],
+    "Saturday": [
+      {
+        "time": "09:00 - 10:00",
+        "className": "Community Engagement Project (CEP)",
+        "teacher": "B1/B2: H. Gehani , B3/B4 : S. Deshmukh",
+        "room": "DT-105",
+        "type": "Project",
+        "color": "bg-amber-100"
+      },
+      {
+        "time": "12:00 - 01:00",
+        "className": "Recess",
+        "teacher": "-",
+        "room": "-",
+        "type": "Break",
+        "color": "bg-yellow-100"
+      },
+      {
+        "time": "01:00 - 02:00",
+        "className": "CSE Honours",
+        "teacher": "",
+        "room": "",
+        "type": "Honors",
+        "color": "bg-purple-100"
+      }
+    ],
+    "Sunday": []
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Timeline({ events }) {
     if (!events || events.length === 0) return null;
@@ -29,9 +30,11 @@ export default function Timeline({ events }) {
                                     </span>
                                 </div>
                                 <h3 className="font-black text-xl mb-2 text-black group-hover:underline decoration-2 underline-offset-4">{event.summary}</h3>
-                                <p className="text-black text-sm leading-relaxed font-medium">
-                                    {event.description}
-                                </p>
+                                <ScrollArea className="max-h-[200px] w-full rounded-md border-2 border-black bg-white p-4 text-base shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                                    <p className="text-black text-base leading-relaxed font-medium">
+                                        {event.description}
+                                    </p>
+                                </ScrollArea>
                                 <div className="flex justify-end mt-4">
                                      <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[#A8E6CF] px-1 transition-colors">Read More -&gt;</span>
                                 </div>

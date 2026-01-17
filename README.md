@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Section A1 - Web Wars: Section Showdown
+
+## Live Demo
+**[https://technicalcup-a1.vercel.app/](https://technicalcup-a1.vercel.app/)**
+
+## Tech Stack
+
+This project is built using a modern, performance-first stack:
+
+*   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+*   **Language**: JavaScript
+*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Smooth Scrolling**: [Lenis](https://lenis.studio/)
+*   **Fonts**: Montserrat (via `next/font`)
+
+## Key Features
+
+*   **Neobrutalist Design**: A bold, high-contrast aesthetic with hard shadows and vibrant colors to make a strong visual impact.
+*   **Responsive Timeline**: An interactive "Journey" timeline on the Blog page to showcase our milestones.
+*   **Study Hub Dashboard**: A comprehensive dashboard (`/studyhub`) for students to track schedules, tasks, and deadlines.
+*   **Dynamic Gallery**: A curated gallery section to highlight our section's memories.
+*   **Smooth Scrolling**: Integrated Lenis for a premium, buttery-smooth scrolling experience.
+*   **Mobile Responsive**: Fully optimized for all device sizes, including a custom mobile navigation menu.
+
+## Bonus Tasks & Achievements
+
+We have successfully implemented the following bonus challenges:
+
+### 1. Mascot Implementation
+We designed and integrated a custom **Mascot** that embodies the spirit of Section A1.
+*   **Consistent Theme**: The mascot uses the same color palette (Mint Green & Black) as the rest of the site.
+*   **Integration**: It is prominently featured in the Hero section, Navbar, and Mobile Menu to create a cohesive brand identity.
+
+### 2. SEO Optimization
+We have implemented comprehensive SEO practices to ensure maximum visibility:
+*   **Metadata**: Custom `title` and `description` for every page (`layout.js`, `studyhub/page.js`, etc.).
+*   **Open Graph & Twitter Cards**: High-quality social sharing previews configured in `layout.js` using our mascot image.
+*   **Semantic HTML**: Proper use of `<main>`, `<section>`, `<header>`, and `<nav>` tags for better accessibility and structure.
+*   **Dynamic Sitemap**: Automatically generated `sitemap.xml` listing all routes (`/`, `/blog`, `/studyhub`, etc.).
+*   **Robots.txt**: Configured to allow indexing and point crawlers to the sitemap.
+
+### 3. UI Components Challenge
+We have integrated **Neobrutalism.dev**'s component library to enhance our design system, focusing on reusability and aesthetics.
+*   **[Scroll Area](https://www.neobrutalism.dev/docs/scroll-area)**: Used in the **Home Page** hero section, **Blog Timeline** event descriptions, and **Profile Page** bio section.
+*   **[Button](https://www.neobrutalism.dev/docs/button)**: Used extensively throughout the site, including the **Navbar**, **Home Page** CTAs, and the **Study Hub** dashboard controls.
+*   **[Image Card](https://www.neobrutalism.dev/docs/image-card)**: Used in the **The People** section on the Home Page to display team member profiles with a distinct hover effect.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/vynride/technicalcup-A1.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
