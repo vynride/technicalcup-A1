@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import GalleryCard from '@/components/GalleryCard';
 import CategoryButton from '@/components/CategoryButton';
 import content from '@/data/gallerycontent.json';
-// footer
+
 
 export default function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState('All');
