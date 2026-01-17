@@ -1,0 +1,58 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "date": "April 08, 2018",
+      "title": "AP Student Info Packet, PreGrid, & Test Dates",
+      "description": "If you are taking an AP test this year and missed progressing session on April 17th, plan to go to the auditorium for a makeup date on..."
+    },
+    {
+      "id": 2,
+      "date": "April 18, 2018",
+      "title": "Senior Survey",
+      "description": "12th grade students are required to fill out the survey below prior to graduation."
+    },
+    {
+      "id": 3,
+      "date": "April 17, 2018",
+      "title": "Geometry & Biology Tutoring EOC Boost Camp",
+      "description": "Geometry & Biology Tutoring EOC Boost Camp..."
+    },
+    {
+      "id": 4,
+      "date": "April 15, 2018",
+      "title": "Spring Break Schedule Changes",
+      "description": "Important updates regarding the spring break schedule and upcoming events."
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "month": "MAY",
+      "day": "07",
+      "title": "Hunnybear Dance Team Auditions",
+      "time": "04:30 PM"
+    },
+    {
+      "id": 2,
+      "month": "MAY",
+      "day": "11",
+      "title": "Senior Breakfast",
+      "time": "08:30 AM"
+    },
+    {
+      "id": 3,
+      "month": "MAY",
+      "day": "16",
+      "title": "Graduation Practice",
+      "time": "09:30 AM"
+    },
+    {
+      "id": 4,
+      "month": "MAY",
+      "day": "22",
+      "title": "End of Year Celebration",
+      "time": "02:00 PM"
+    }
+  ]
+}
