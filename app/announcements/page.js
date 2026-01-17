@@ -183,7 +183,7 @@ export default function Announcements() {
           <Card className="bg-gradient-to-br from-[#F9D55C] to-[#F9D78B] text-[#2C2C2C] border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-2">Quick Stats</h3>
-              <p className="text-5xl font-bold mb-2">24</p>
+              <p className="text-5xl font-bold mb-2">7</p>
               <p className="text-[#2C2C2C]">Active Items</p>
             </CardContent>
           </Card>
@@ -191,7 +191,7 @@ export default function Announcements() {
           <Card className="bg-gradient-to-br from-[#F9D55C] to-[#F9D78B] text-[#2C2C2C] border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-2">This Week</h3>
-              <p className="text-5xl font-bold mb-2">8</p>
+              <p className="text-5xl font-bold mb-2">4</p>
               <p className="text-[#2C2C2C]">Upcoming Events</p>
             </CardContent>
           </Card>
@@ -199,7 +199,7 @@ export default function Announcements() {
           <Card className="bg-gradient-to-br from-[#F9D55C] to-[#F9D78B] text-[#2C2C2C] border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-2">Priority</h3>
-              <p className="text-5xl font-bold mb-2">5</p>
+              <p className="text-5xl font-bold mb-2">3</p>
               <p className="text-[#2C2C2C]">High Priority</p>
             </CardContent>
           </Card>
@@ -207,7 +207,7 @@ export default function Announcements() {
           <Card className="bg-gradient-to-br from-[#F9D55C] to-[#F9D78B] text-[#2C2C2C] border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold mb-2">Updates</h3>
-              <p className="text-5xl font-bold mb-2">12</p>
+              <p className="text-5xl font-bold mb-2">5</p>
               <p className="text-[#2C2C2C]">Recent Updates</p>
             </CardContent>
           </Card>
