@@ -17,7 +17,7 @@ export default function Gallery() {
       : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-[#FFF6E8]">
+    <div className="min-h-screen bg-background">
       <Navbar />
       <main className="max-w-7xl mx-auto px-6 py-8">
         <div className="mb-8">

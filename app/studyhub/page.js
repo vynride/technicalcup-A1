@@ -136,10 +136,10 @@ export default function Dashboard() {
 
 
       <main className="mx-auto space-y-6 px-2 md:px-4">
-        <div className="flex flex-col lg:flex-row gap-6 items-end justify-between">
+        <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-end justify-between">
           <div className="w-full overflow-hidden">
-            <h2 className="text-5xl font-extrabold tracking-tight">Weekly Schedule</h2>
-            <div className="flex items-center gap-4 mt-6 overflow-x-auto pb-3 scrollbar-hide">
+            <h2 className="text-5xl font-extrabold tracking-tight text-center lg:text-left">Weekly Schedule</h2>
+            <div className="flex flex-wrap items-center gap-4 mt-6 pb-3">
               {['All', 'Compiler Design', 'AI', 'DBMS'].map((l, i) => <Filter key={l} label={l} active={i === 2} />)}
               <button className="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-[var(--color-neo-orange)] border-2 border-black text-white neo-shadow hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all"><Plus size={24} /></button>
             </div>
@@ -150,8 +150,8 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-9 gap-6">
-          <Box className="lg:col-span-6 bg-[#D0BCFF] flex flex-col relative min-h-[520px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-6">
+          <Box className="md:col-span-2 lg:col-span-6 bg-[#D0BCFF] flex flex-col relative lg:min-h-[520px]">
             <div className="flex flex-col gap-4 z-10">
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="bg-[#1A1A1A] text-white p-5 rounded-3xl border-2 border-black flex-1">
@@ -208,7 +208,7 @@ export default function Dashboard() {
                         <div className="flex justify-between items-start">
                           <div>
                             <p className="text-2xl font-bold text-black">{item.title}</p>
-                            <p className="text-xs font-bold mt-1 uppercase text-gray-700">Deadline</p>
+                            <p className="text-sm font-bold mt-1 uppercase text-gray-700">Deadline</p>
                             <p className="text-sm text-gray-700">{item.detail}</p>
                           </div>
                           <ArrowUpRight size={20} className="text-black" />
@@ -249,12 +249,12 @@ export default function Dashboard() {
                             </div>
                             <p className="text-base font-bold text-gray-900 break-words">{classItem.className}</p>
                           </div>
-                          <span className={`px-3 py-1 rounded-full text-xs font-semibold flex-shrink-0 ${classItem.type === 'Break' ? 'bg-yellow-300 text-yellow-900' : 'bg-purple-200 text-purple-800'}`}>
+                          <span className={`px-3 py-1 rounded-full text-sm font-semibold flex-shrink-0 ${classItem.type === 'Break' ? 'bg-yellow-300 text-yellow-900' : 'bg-purple-200 text-purple-800'}`}>
                             {classItem.type}
                           </span>
                         </div>
                         {classItem.type !== 'Break' && (
-                          <div className="flex flex-wrap gap-3 text-xs text-gray-700 ml-6">
+                          <div className="flex flex-wrap gap-3 text-sm text-gray-700 ml-6">
                             <span className="flex items-center gap-1"><User size={13} />{classItem.teacher}</span>
                             <span className="flex items-center gap-1"><MapPin size={13} />{classItem.room}</span>
                           </div>
@@ -271,7 +271,7 @@ export default function Dashboard() {
             </div>
           </Box>
 
-          <div className="lg:col-span-3 flex flex-col gap-6">
+          <div className="md:col-span-2 lg:col-span-3 flex flex-col md:flex-row lg:flex-col gap-6">
             <Box className="bg-[var(--color-neo-purple)] flex-1 flex flex-col gap-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">

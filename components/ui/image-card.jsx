@@ -8,7 +8,7 @@ export default function ImageCard({
   return (
     <figure
       className={cn(
-        "w-[280px] overflow-hidden rounded-2xl border-2 border-black bg-white font-sans shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+        "w-[220px] md:w-[280px] overflow-hidden rounded-2xl border-2 border-black bg-white font-sans shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
         className
       )}>
       <img className="w-full aspect-[3/4] object-cover border-b-2 border-black" src={imageUrl} alt={caption} />
