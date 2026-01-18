@@ -20,7 +20,7 @@ export default function Home() {
         <div className="px-6 lg:px-8 z-10">
         </div>
 
-        <section className="mx-auto max-w-7xl px-6 py-20 lg:py-32 z-10">
+        <section className="mx-auto max-w-7xl px-6 py-12 lg:py-32 z-10">
            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
             {/* Text Content */}
             <div className="text-center lg:text-left max-w-3xl flex-1">
@@ -60,14 +60,16 @@ export default function Home() {
         </section>
 
         {/* Separator */}
-        <div className="w-full h-4 bg-black"></div>
+        <div className="w-full h-2 md:h-4 bg-black"></div>
 
         {/* The People Section */}
-        <section className="mx-auto w-full py-20 lg:py-32 overflow-hidden">
+        <section className="mx-auto w-full py-12 lg:py-32 overflow-hidden">
           <div className="px-6 lg:px-8 mb-12 text-center">
-             <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl drop-shadow-[2px_2px_0px_rgba(0,0,0,0.1)]">
-                The <span className="text-teal-600">People</span>
-             </h2>
+            <div className="inline-block px-8 py-4 border-4 border-black bg-[var(--color-neo-yellow)] neo-shadow rounded-xl transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+              <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
+                The People
+              </h2>
+            </div>
           </div>
           
            {/* Carousel */}

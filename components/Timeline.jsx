@@ -22,22 +22,28 @@ export default function Timeline({ events }) {
                             </div>
 
                             {/* Card */}
-                            <Link href={`/events/${event.id}`} className="order-1 flex-1 md:flex-none bg-white rounded-xl neo-shadow border-2 border-black md:w-5/12 px-4 py-4 md:px-6 md:py-6 hover:translate-x-[2px] hover:translate-y-[2px] hover:neo-shadow-sm transition-all duration-200 cursor-pointer block group">
-                                <div className="flex flex-wrap justify-between items-center mb-3 gap-2">
-                                    <span className="font-bold text-black text-sm tracking-wide">{event.date}</span>
-                                    <span className={`px-3 py-1 rounded-md text-sm font-black uppercase tracking-wider border-2 border-black neo-shadow-sm ${event.categoryColor ? event.categoryColor : 'bg-gray-100 text-black'}`}>
-                                        {event.category}
-                                    </span>
-                                </div>
-                                <h3 className="font-black text-xl mb-2 text-black group-hover:underline decoration-2 underline-offset-4">{event.summary}</h3>
-                                <ScrollArea className="max-h-[200px] w-full rounded-md border-2 border-black bg-white p-4 text-base neo-shadow-sm">
-                                    <p className="text-black text-base leading-relaxed font-medium">
-                                        {event.description}
-                                    </p>
-                                </ScrollArea>
+                            <Link href={`/events/${event.id}`} className="order-1 flex-1 md:flex-none md:w-5/12 block relative group cursor-pointer h-full">
+                                {/* Shadow Layer */}
+                                <div className="absolute top-2 left-2 w-full h-full bg-black rounded-xl transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                                
+                                {/* Content Layer */}
+                                <div className="relative z-10 bg-white rounded-xl border-4 border-black px-4 py-4 md:px-6 md:py-6 transition-transform duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 h-full flex flex-col">
+                                    <div className="flex flex-wrap justify-between items-center mb-3 gap-2">
+                                        <span className="font-bold text-black text-sm tracking-wide">{event.date}</span>
+                                        <span className={`px-3 py-1 rounded-md text-sm font-black uppercase tracking-wider border-2 border-black neo-shadow-sm ${event.categoryColor ? event.categoryColor : 'bg-gray-100 text-black'}`}>
+                                            {event.category}
+                                        </span>
+                                    </div>
+                                    <h3 className="font-black text-xl mb-2 text-black group-hover:underline decoration-2 underline-offset-4">{event.summary}</h3>
+                                    <ScrollArea className="max-h-[200px] w-full rounded-md border-2 border-black bg-white p-4 text-base neo-shadow-sm flex-grow">
+                                        <p className="text-black text-base leading-relaxed font-medium">
+                                            {event.description}
+                                        </p>
+                                    </ScrollArea>
 
-                                <div className="flex justify-end mt-4">
-                                    <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[var(--color-neo-mint)] px-1 transition-colors">Read More -&gt;</span>
+                                    <div className="flex justify-end mt-4">
+                                        <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[var(--color-neo-mint)] px-1 transition-colors">Read More -&gt;</span>
+                                    </div>
                                 </div>
                             </Link>
                         </div>
