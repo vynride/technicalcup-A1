@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Timeline({ events }) {
@@ -34,8 +35,9 @@ export default function Timeline({ events }) {
                                         {event.description}
                                     </p>
                                 </ScrollArea>
+
                                 <div className="flex justify-end mt-4">
-                                     <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[var(--color-neo-mint)] px-1 transition-colors">Read More -&gt;</span>
+                                    <span className="text-black text-xs font-black uppercase tracking-widest group-hover:bg-[var(--color-neo-mint)] px-1 transition-colors">Read More -&gt;</span>
                                 </div>
                             </Link>
                         </div>
