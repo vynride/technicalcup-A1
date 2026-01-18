@@ -1,12 +1,5 @@
 {
-  "categories": [
-    "All",
-    "Design",
-    "Photography",
-    "Development"
-  ],
-
-  "galleryItems": [
+   "galleryItems": [
     {
       "id": 1,
       "title": "Class Photo",
