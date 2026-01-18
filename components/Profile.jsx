@@ -21,7 +21,7 @@ export default function Profile({ profile }) {
               max-w-sm lg:max-w-full
               border-4 border-black rounded-2xl overflow-hidden
               neo-shadow-lg
-              aspect-[3/4] bg-white
+              aspect-square lg:aspect-[3/4] bg-white
             "
           >
             <img

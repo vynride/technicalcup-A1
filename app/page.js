@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <section className="mx-auto max-w-7xl px-6 py-20 lg:py-32 z-10">
-           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
             {/* Text Content */}
             <div className="text-center lg:text-left max-w-3xl flex-1">
               <h1 className="text-4xl font-bold tracking-tight text-neo-black sm:text-6xl drop-shadow-[2px_2px_0px_rgba(0,0,0,0.1)]">
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           
            {/* Carousel */}
-          <ScrollArea className="whitespace-nowrap pb-4 mr-6 lg:mr-20">
+          <ScrollArea className="whitespace-nowrap pb-4 mr-6 lg:mr-20 max-w-[100vw] overflow-x-hidden">
             <div className="flex w-max gap-6 px-6 lg:px-20 pt-10 pb-12">
               {profileData.map((person) => (
                 <Link href={`/profile/${person.id}`} key={person.id} className="shrink-0">

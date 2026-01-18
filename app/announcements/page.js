@@ -37,7 +37,7 @@ export default function Announcements() {
       <div className="max-w-7xl mx-auto">
         <header className="mb-12 flex items-center justify-between">
           <div>
-            <h1 className="text-5xl font-bold text-black mb-2 text-align-left">Announcement</h1>
+            <h1 className="text-3xl md:text-5xl font-bold text-black mb-2 text-align-left">Announcement</h1>
             <p className="text-[#2C2C2C] font-semibold">Stay updated with announcements</p>
           </div>
           <div className="flex gap-3">
@@ -59,8 +59,8 @@ export default function Announcements() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           <Card className="bg-[#D7C8FF] backdrop-blur-sm border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardHeader className="pb-4">
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-3xl font-bold text-[#2c2c2c]">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-[#2c2c2c]">
                   Announcements
                 </CardTitle>
                 <div className="flex gap-2">
@@ -97,13 +97,13 @@ export default function Announcements() {
                   key={announcement.id}
                   className="p-4 rounded-2xl bg-[#E6DCFF] hover:shadow-md transition-all duration-300 cursor-pointer border border-[#CBB9FF] "
                 >
-                  <p className="text-xs font-semibold text-[#2C2C2C] mb-1 uppercase tracking-wide">
+                  <p className="text-sm font-bold text-[#2C2C2C] mb-1 uppercase tracking-wide">
                     {announcement.date}
                   </p>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 break-words">
                     {announcement.title}
                   </h3>
-                  <p className="text-sm text-[#3c3a3d] leading-relaxed">
+                  <p className="text-sm text-[#3c3a3d] leading-relaxed break-words">
                     {announcement.description}
                   </p>
                 </div>
@@ -120,8 +120,8 @@ export default function Announcements() {
 
           <Card className="bg-[#D7C8FF] backdrop-blur-sm border-0 shadow-xl rounded-3xl overflow-hidden">
             <CardHeader className="pb-4">
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-3xl font-bold text-[#2c2c2c]">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-0">
+                <CardTitle className="text-2xl md:text-3xl font-bold text-[#2c2c2c]">
                   Events
                 </CardTitle>
                 <div className="flex gap-2">
@@ -155,13 +155,13 @@ export default function Announcements() {
                   className="flex items-center gap-4 p-4 rounded-2xl bg-[#E6DCFF] hover:shadow-md transition-all duration-300 cursor-pointer border border-[#CBB9FF]  "
                 >
                   <div className="flex-shrink-0 bg-gradient-to-br from-[#F9D55C] to-[#F9D78B] text-[#1E1D1D] p-4 rounded-2xl text-center shadow-lg min-w-[80px]">
-                    <p className="text-xs font-bold uppercase tracking-wider">
+                    <p className="text-sm font-bold uppercase tracking-wider">
                       {event.month}
                     </p>
                     <p className="text-3xl font-bold leading-none mt-1">{event.day}</p>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold text-gray-900 mb-1 break-words">
                       {event.title}
                     </h3>
                     <p className="text-sm text-[#3c3a3d] font-semibold">{event.time}</p>
