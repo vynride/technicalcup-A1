@@ -166,6 +166,20 @@ select {
     border-width: 2px;
     border-color: black;
   }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+  .animate-slow-spin {
+    animation: spin 10s linear infinite;
+  }
+  @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+  }
 }
 
 @layer base {
