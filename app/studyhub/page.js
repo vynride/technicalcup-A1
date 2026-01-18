@@ -14,7 +14,7 @@ import {
   Download,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import timetableData from "@/app/TimeTable.json";
+import timetableData from "@/app/studyhub/Timetable.json";
 
 const Box = ({ children, className = "" }) => (
   <div
@@ -171,15 +171,17 @@ export default function Dashboard() {
   });
 
   return (
-    <div className="min-h-screen bg-[#FFFDF8] p-2 md:p-4 font-[family-name:var(--font-montserrat)] text-black">
-      <Navbar />
-      <header className="mx-auto mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-6 px-2 md:px-4">
-        <div className="flex items-center gap-6">
-          <div className="w-14 h-14 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-xl shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">
+    <div className="min-h-screen bg-[#FFFDF8] pt-16 md:pt-20 px-2 md:px-4 pb-4 md:pb-6 font-[family-name:var(--font-montserrat)] text-black">
+      <div className="mb-6 md:mb-8">
+        <Navbar />
+      </div>
+      <header className="mx-auto mb-8 md:mb-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 px-2 md:px-4 lg:px-6">
+        <div className="flex items-center gap-4 md:gap-6">
+          <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-black border-2 border-black text-white flex items-center justify-center font-bold text-lg md:text-xl shadow-[2px_2px_0px_0px_rgba(255,255,255,0.5)]">
             PG
           </div>
           <div>
-            <h1 className="text-3xl font-black uppercase">Welcome back!</h1>
+            <h1 className="text-2xl md:text-3xl font-black uppercase">Welcome back!</h1>
           </div>
         </div>
       </header>
@@ -306,11 +308,13 @@ export default function Dashboard() {
                       {selectedDay}
                     </p>
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-gray-600">
-                    <Clock size={16} />
-                    <span className="font-semibold">
-                      {calculateTotalHours()}
-                    </span>
+                  <div className="flex flex-col items-end gap-2">
+                    <div className="px-4 py-2 bg-purple-100 border-2 border-purple-300 rounded-lg">
+                      <span className="text-xs font-bold uppercase text-purple-700">Total</span>
+                      <p className="text-2xl font-extrabold text-purple-900">
+                        {calculateTotalHours()}
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div
