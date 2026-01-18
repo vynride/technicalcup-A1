@@ -14,7 +14,7 @@ import {
   Download,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import timetableData from "@/app/TimeTable.json";
+import timetableData from "@/app/Timetable.json";
 
 const Box = ({ children, className = "" }) => (
   <div
