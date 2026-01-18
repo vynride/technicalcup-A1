@@ -47,6 +47,20 @@
       "day": "19",
       "title": "Hawkins Heist",
       "time": "12:00 PM - 6:00 PM"
+    },
+    {
+      "id": 4,
+      "month": "JAN",
+      "day": "19",
+      "title": "Tech Talk - Naman Vidyabhanu",
+      "time": "10:00 AM Onwards"
+    },
+    {
+      "id": 5,
+      "month": "JAN",
+      "day": "20",
+      "title": "Cultural Night",
+      "time": "02:00 PM Onwards"
     }
   ]
 }
