@@ -1,8 +1,6 @@
 'use client';
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
-import GalleryCard from '@/components/GalleryCard';
-import CategoryButton from '@/components/CategoryButton';
 import content from '@/data/gallerycontent.json';
 
 
@@ -19,7 +17,7 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="w-full px-6 py-8">
         <div className="mb-8">
           <h1 className="text-5xl font-bold text-black mb-4">
             Creative Gallery
@@ -29,21 +27,18 @@ export default function Gallery() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-3 mb-10">
-          {categories.map(category => (
-            <CategoryButton
-              key={category}
-              label={category}
-              isActive={selectedCategory === category}
-              onClick={() => setSelectedCategory(category)}
-            />
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 gap-8 w-full max-w-6xl">
           {filteredItems.map(item => (
-            <GalleryCard key={item.id} item={item} />
+            <div key={item.id} className="overflow-hidden rounded-lg border-2 border-black">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-[40rem] object-cover"
+              />
+            </div>
           ))}
+          </div>
         </div>
       </main>
     </div>
